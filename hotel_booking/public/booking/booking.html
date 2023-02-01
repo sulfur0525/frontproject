@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="c_wrap">	<!-- 본문 전체 틀 -->
-		<div class="c_topbox">
+		<div class="c_mainbox">
 			<div class="c_left_box">	<!-- 왼쪽 박스 s -->
 				<div class="c_booking_info">	<!-- 예약 정보 s -->
 					<div class="c_info_image"><!-- 객실 이미지 s -->
@@ -18,7 +18,9 @@
 					</div> <!-- 객실 이미지 e -->
 					<div class="c_roomInfo">	<!-- 날짜, 인원, 객실 이름 -->
 						<div class="c_date">	<!-- 날짜 -->
-							날짜
+							<span class="c_firstday">오늘날짜</span>
+							<span>~</span>
+							<span class="c_lastday">다음날짜</span>
 							<div>달력이미지</div>
 						</div>	<!-- 날짜 e -->
 						<div>	<!-- 인원 -->
@@ -26,9 +28,9 @@
 								<div class="c_adult">
 									<div>성인</div>
 									<div>
-										<span><button> - </button></span>
-										<span>숫자</span>
-										<span><button> + </button></span>
+										<span><button onclick="prevbtn(1)"> - </button></span>
+										<span class="c_adultno"></span>
+										<span><button onclick="plusbtn(1)"> + </button></span>
 									</div>
 								</div>
 								<div class="c_child"> 
@@ -36,9 +38,9 @@
 									어린이 
 									</div>
 									<div>
-										<span><button> - </button></span>
-										<span>숫자</span>
-										<span><button> + </button></span>
+										<span><button onclick="prevbtn(2)"> - </button></span>
+										<span class="c_childno"></span>
+										<span><button onclick="plusbtn(2)"> + </button></span>
 									</div>
 								</div>
 							</div>
@@ -48,9 +50,18 @@
 						</select>	<!-- 객실 이름 e-->
 					</div> <!-- 날짜, 인원, 객실 이름 -->
 					<div class="c_typeSelectBtn">	<!-- 상품 타입 선택 -->
-						<button>상품타입 선택</button>
+						<button onclick="option_select()">상품타입 선택</button>
 					</div> <!-- 상품 타입 선택 -->
 				</div> <!-- 예약 정보 e -->
+				<div class="c_roomoption"> <!-- 객실 옵션 s -->
+					<div>
+						객실이름
+					</div>
+					<div>
+						금액
+					</div>
+					<button>장바구니</button>
+				</div> <!-- 객실 옵션  e-->
 			</div> <!-- 왼쪽 박스 e -->
 			<div class="c_selectbox">	<!-- 장바구니 -->
 				<h3>장바구니</h3>
@@ -62,27 +73,15 @@
 				</div>
 			</div>
 		</div>	<!-- topbox e -->
-		<div> <!-- 객실 옵션 s -->
-			<div>
-				객실이름
-			</div>
-			<div>
-				금액
-			</div>
-			<button>장바구니</button>
-		</div> <!-- 객실 옵션  e-->
+		
 		<div class="c_modal_wrap">	<!-- 달력 :  모달 -->
 			<div class="c_modal_box">	<!-- 모달 상자1 -->
-				<div class="c_modal_box">	
-					ㅇㅇ
-				</div>
 			</div> <!-- 모달 상자1 e -->
 			<div class="c_modal_btns">	<!-- 버튼 목록 -->
 					<button class="c_modal_write" type="button">등록</button>
 					<button class="c_modal_close" type="button">닫기</button>
 				</div> <!-- 버튼 목록 e -->
 		</div> <!-- 달력 :  모달 e -->
-	
 	</div> <!-- 본문 전체 틀 e -->
 		
 	

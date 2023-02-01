@@ -6,7 +6,7 @@
 	margin: 0 auto;
 	width: 1200px;
 }
-.c_topbox{display: flex;}
+.c_mainbox{display: flex;}
 .c_left_box{
 	width: 80%;
 }
@@ -20,4 +20,22 @@
 .c_booking_info, .c_date,.c_adult,.c_child{
 	display: flex;
 	justify-content: space-between;
+}
+
+.c_roomoption{
+	display: none;
+}
+
+.c_modal_box{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.day{
+	display: inline-block;
+	border: 1px solid #eeeeee;
+	width: 14%;	/* 100/7 = 14.2~~~ */
+	height: 100px;
+	overflow: hidden;			/* 내용이 구역보다 커졌을때 숨김 */
 }
