@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{border: 1px solid red;}
+
+.c_wrap{
+	margin: 0 auto;
+	width: 1200px;
+}
+.c_topbox{display: flex;}
+.c_left_box{
+	width: 80%;
+}
+
+.c_selectbox{width: 20%;}
+
+.c_info_image{width: 30%;}
+.c_roomInfo{width: 50%;}
+.c_typeSelectBtn{width: 20%;}
+
+.c_booking_info, .c_date,.c_adult,.c_child{
+	display: flex;
+	justify-content: space-between;
+}
