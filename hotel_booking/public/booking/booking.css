@@ -12,27 +12,33 @@
 }
 
 .c_selectbox{width: 20%;}
-
 .c_info_image{width: 30%;}
 .c_roomInfo{width: 50%;}
 .c_typeSelectBtn{width: 20%;}
-
+.c_booking_info{height: 300px;}
 .c_booking_info, .c_date,.c_adult,.c_child{
 	display: flex;
 	justify-content: space-between;
 }
 
-.c_roomoption{
+/* .c_roomoption{
 	display: none;
-}
+} */
 
 .c_modal_box{
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 }
-
+.c_modal_wrap{width: 200px;}
 .day{
+	display: inline-block;
+	border: 1px solid #eeeeee;
+	width: 14%;	/* 100/7 = 14.2~~~ */
+	overflow: hidden;			/* 내용이 구역보다 커졌을때 숨김 */
+}
+
+.content{
 	display: inline-block;
 	border: 1px solid #eeeeee;
 	width: 14%;	/* 100/7 = 14.2~~~ */

@@ -81,12 +81,12 @@ function cal_print(){
 	
 	// 일 만들기 [1일부터 ~ 마지막 일(월마다 다름)까지]
 	for(let day=1;day<=lastday;day++){
-		// 4. 1일~마지막일 날짜확인
+		// 1일~마지막일 날짜확인
 		let date = dateformat(new Date(year,month-1,day));
 		//현재 날짜의 요일
 		let today = new Date(year, month-1, day).getDay();
 		//console.log(date)
-		html += `<div>${day}${content_print(date)}</div>`
+		html += `<div class="day">${day}${content_print(date)}</div>`
 	}
 	// 4. 마크업 출력
 	document.querySelector('.c_modal_box').innerHTML = html;
@@ -103,12 +103,10 @@ function dateformat(date){
 
 function content_print(date){
 	console.log(date)
-	//1.인수로 전달 된 날짜와 동일한 일정 날짜 찾기
-		//1.html 선언
 	let html = ``
 	content.forEach((o)=>{
 		if(date==o.date){
-			html += `<div class="content" style="background-color : ${o.bg_color}">${o.content}</div>`
+			html += `<div class="content">${o.content}</div>`
 		}
 	}) // for end
 	return html;
