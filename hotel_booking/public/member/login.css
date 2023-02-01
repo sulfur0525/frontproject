@@ -1,0 +1,35 @@
+@charset "EUC-KR";
+
+/* 기본설정 */
+*{margin: 0 auto; padding : 0;}
+li{list-style: none;}
+a{text-decoration: none; color: black}
+.wrap{width: 1200px;}
+/*--------------------헤더--------------------*/
+.b_header{
+	height: 100px;
+	border: 1px solid black;
+}
+
+/*--------------------본문--------------------*/
+.b_content{
+	width: 1200px; height: 80%;
+	border: 1px solid black;	
+}
+.b_member{
+	width: 1200px; height: 400px;
+	border: 1px solid black;
+	text-align: center;
+}
+.b_member h3{
+	margin: 10px; width: 20%;
+	border-bottom: 2px solid gray;
+	margin: 3% auto;
+	
+}
+
+/*--------------------푸터--------------------*/
+.b_footer{
+	width: 1200px; height: 100px;
+	border: 1px solid black;
+}
