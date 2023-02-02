@@ -58,12 +58,16 @@
 				</div> <!-- 객실 옵션  e-->
 			</div> <!-- 왼쪽 박스 e -->
 			<div class="c_selectbox">	<!-- 장바구니 -->
-				<h3>장바구니</h3>
-				<div>
-					<h5>체크인-체크아웃</h5>
-					<span>날짜</span>
-					<span>-</span>
-					<span>날짜</span>
+				<div class="selectitem">
+					<h3>장바구니</h3>
+					<div>
+						<h5 >예약 날짜</h5>
+						<span class="c_boxFirst"></span>
+						<span>-</span>
+						<span class="c_boxLast"></span>
+					</div>
+					<h5>객실이름</h5>
+					<h5 class="c_boxdate">숙박일수</h5>
 				</div>
 				<button>예약하기</button>
 			</div>
@@ -89,8 +93,9 @@
 				</div> <!-- 모달 상자1 e -->
 			</div>
 			<div class="c_modal_btns">	<!-- 버튼 목록 -->
-					<button onclick="c_modal_write()" type="button">등록</button>
-					<button onclick="c_modal_close()" type="button">닫기</button>
+					<span class="c_bookingdate">숙박일수</span>
+					<span><button onclick="c_modal_write()" type="button">등록</button></span>
+					<span><button onclick="c_modal_close()" type="button">닫기</button></span>
 				</div> <!-- 버튼 목록 e -->
 		</div> <!-- 달력 :  모달 e -->
 	</div> <!-- 본문 전체 틀 e -->
