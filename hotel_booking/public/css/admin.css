@@ -11,69 +11,66 @@
     font-weight: normal;
     font-style: normal;
 }
-
+/* 공통----------------------------------------------------------------------- */
 *{
+	font-family: 'Happiness-Sans-Bold';
 	margin: 0px;
 	padding: 0px;
 }
-
-.ad_wrap{
+a{ text-decoration: none; color: black; }
+/* ------------------------------------------------------------------------ */
+.wrap{
 	width: 1200px;
+	height : 100%;
+	min-height: 100%;
 	margin: 0 auto;
 	display: flex;
-	justify-content: center;
+}
+/* 사이드바1----------------------------------------------------------------------- */
+.navbox1{
+	width: 80px;
+	height: 100%;
+	background-color: #eeeeee;
+}
+.nav1_item img{
+	height: 50px;
+}
+
+.nav1_item{
+	display: inline-block;
+	width : 100%; 
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+}
+.nav1_title{
+	display : inline-block;;
+	width : 100%;
 	text-align: center;
-	
+	margin-bottom: 10px; 
 }
-.sidebar{
-	font-family: 'Happiness-Sans-Title';
-	width: 200px;
-	height: 800px;
+/* 사이드바2--------------------------------------------------------------------------------- */
+.navbox2{
+	width: 230px;
 }
+.nav2_title{
+	text-align: center !important;
+    height: 54px;
+    line-height: 54px;
+    background: #d7dee5;
+   	font-size: 18px;
+}
+.menu_title{
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px!important;
+}
+
+
 .contents{
-	width: 1000px;
-	height: 800px;
-	background-color: #eeeeee;
-	position: relative;
+	width: auto;
 }
-.side_menus{ padding-top: 20px;}
-.side_menu {
-	width: 200px;
-	background-color: #eeeeee;
-	padding: 10px 0px;
-	margin: 25px 0px;
-	font-size: 20px;
-	border-bottom: 1px solid #b5b5b5;
-	border-top: 1px solid #b5b5b5;
-}
-.side_title{
-	margin: 20px 0px;
-	background-color: #b5b5b5;
-	width: 200px;
-	padding: 10px 0px;
-	font-size: 20px;
-}
-
 .booking{
-	width: 900px;
-	margin: 0 auto;
-	position: relative;
-	top : 50px;
-	background-color: white;
+	width: 100%
 }
-
-.bo_head{
-	background-color: #eeeeee;
-	border: 1px solid black; 
-}
-
-
-
-
-
-
-
-
-
-
 
