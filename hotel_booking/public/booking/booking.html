@@ -52,12 +52,8 @@
 					</div> <!-- 상품 타입 선택 -->
 				</div> <!-- 예약 정보 e -->
 				<div class="c_roomoption"> <!-- 객실 옵션 s -->
-					<div>
-						객실이름
-					</div>
-					<div>
-						금액
-					</div>
+					<div>객실이름</div>
+					<div>금액</div>
 					<button>장바구니</button>
 				</div> <!-- 객실 옵션  e-->
 			</div> <!-- 왼쪽 박스 e -->
@@ -74,29 +70,27 @@
 		</div>	<!-- topbox e -->
 		
 		<div class="c_modal_wrap">	<!-- 달력 :  모달 -->
-			<div class="c_modal_box1">	<!-- 모달 상자1 -->
-				<div class="c_startdayTop">
-					<span><button><</button></span>
-					<span class="c_startmonth"></span>
-					<span><button>></button></span>
-				</div>
-				<div class="c_startdayBot">
-				
-				</div>
-			</div> <!-- 모달 상자1 e -->
-			<div class="c_modal_box2">	<!-- 모달 상자1 -->
-				<div class="c_lastdayTop">
-					<span><button><</button></span>
-					<span class="c_lastmonth"></span>
-					<span><button>></button></span>
-				</div>
-				<div class="c_lastdayBot">
-				
-				</div>
-			</div> <!-- 모달 상자1 e -->
+			<div class="c_calenderWrap">
+				<div class="c_modal_box1">	<!-- 모달 상자1 -->
+					<div class="c_startdayTop">
+						<span><button onclick="prevMonth(1)"><</button></span>
+						<span class="c_startmonth"></span>
+						<span><button onclick="nextMonth(1)">></button></span>
+					</div>
+					<div class="c_startdayBot"></div>
+				</div> <!-- 모달 상자1 e -->
+				<div class="c_modal_box2">	<!-- 모달 상자1 -->
+					<div class="c_lastdayTop">
+						<span><button onclick="prevMonth(2)"><</button></span>
+						<span class="c_lastmonth"></span>
+						<span><button onclick="nextMonth(2)">></button></span>
+					</div>
+					<div class="c_lastdayBot"></div>
+				</div> <!-- 모달 상자1 e -->
+			</div>
 			<div class="c_modal_btns">	<!-- 버튼 목록 -->
-					<button class="c_modal_write" type="button">등록</button>
-					<button class="c_modal_close" type="button">닫기</button>
+					<button onclick="c_modal_write()" type="button">등록</button>
+					<button onclick="c_modal_close()" type="button">닫기</button>
 				</div> <!-- 버튼 목록 e -->
 		</div> <!-- 달력 :  모달 e -->
 	</div> <!-- 본문 전체 틀 e -->

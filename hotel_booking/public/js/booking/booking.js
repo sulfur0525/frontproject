@@ -42,6 +42,7 @@ function plusbtn(i){
 	}
 }
 
+//입실날짜를 선택할 달력 출력 함수
 function first_print(x,y,z){
 	// 2. 현재 설정된 날짜 객체
 	let year = x
@@ -68,14 +69,10 @@ function first_print(x,y,z){
 	for(let b=0; b<weekday;b++){
 		html += `<div class="day"></div>`
 	}
-	
 	// 일 만들기 [1일부터 ~ 마지막 일(월마다 다름)까지]
 	for(let day=1;day<=lastday;day++){
-		// 1일~마지막일 날짜확인
-		let date = dateformat(new Date(year,month-1,day));
-		//console.log(date)
-		if(day==selectday){html += `<div class="day selectday">${day}</div>`
-		}else{html += `<div class="day">${day}</div>`}
+		if(day==selectday){html += `<div class="day selectday" onclick="firstselcet(${year},${month},${day})">${day}</div>`
+		}else{html += `<div class="day" onclick="firstselcet(${year},${month},${day})">${day}</div>`}
 	} //for e
 	// 4. 마크업 출력
 	document.querySelector('.c_startmonth').innerHTML = `${year}년${month}월`;
@@ -84,6 +81,7 @@ function first_print(x,y,z){
 	
 }
 
+//퇴실날짜를 선택할 달력 출력 함수
 function last_print(x,y,z){
 	let year = x
 	let month = y
@@ -98,23 +96,47 @@ function last_print(x,y,z){
 	let lastday = new Date(year, month, 0).getDate();
 		// * 2. 현재 캘린더 설정된 날짜의 1일 시작요일 구하기
 	let weekday = new Date(year, month-1, 1).getDay();
+	for(let b=0; b<weekday;b++){
+		html += `<div class="day"></div>`
+	}
 	for(let day=1;day<=lastday;day++){
-		// 1일~마지막일 날짜확인
-		let date = dateformat(new Date(year,month-1,day));
-		//console.log(date)
-		if(day==selectday){html += `<div class="day selectday">${day}</div>`
-		}else{html += `<div class="day">${day}</div>`}
+		if(day==selectday){html += `<div class="day selectday" onclick="lastselcet(${year},${month},${day})">${day}</div>`
+		}else{html += `<div class="day" onclick="lastselcet(${year},${month},${day})">${day}</div>`}
 	} //for e
 	document.querySelector('.c_lastmonth').innerHTML = `${year}년${month}월`;
 	document.querySelector('.c_lastdayBot').innerHTML = html;
 	document.querySelector('.c_lastday').innerHTML = `${year}-${month}-${selectday}`
 }
 
-function dateformat(date){
-	let d_year = date.getFullYear();
-		//만약에 월/요일이 한자리수 이면 앞에 0 붙이기
-	let d_month = (date.getMonth()+1) <= 9? '0'+(date.getMonth()+1) : (date.getMonth()+1);
-	let d_day = date.getDate() <=9? '0'+date.getDate() : date.getDate();
-	return `${d_year}${d_month}${d_day}`;
+//퇴실날짜를 선택했을때 함수
+function lastselcet(x,y,z){
+	let year = x;
+	let month = y;
+	let day = z;
+	console.log(year)
+	console.log(month)
+	console.log(day)
+	last_print(x,y,z)
+}
+//입실날짜를 선택했을때 함수
+function firstselcet(x,y,z){
+	let year = x;
+	let month = y;
+	let day = z;
+	console.log(year)
+	console.log(month)
+	console.log(day)
+	first_print(x,y,z)
 }
 
+function prevMonth(i){
+	if(i==1){
+		first_print(x,(y-1),z)
+	}else{last_print(x,(y-1),z)}
+}
+
+function nextMonth(i){
+	if(i==1){
+		first_print(x,(y+1),z)
+	}else{last_print(x,(y-1),z)}
+}

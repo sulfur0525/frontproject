@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-*{border: 1px solid red;}
+/* *{border: 1px solid red;} */
 
 .c_wrap{
 	margin: 0 auto;
@@ -30,8 +30,10 @@
 	justify-content: flex-start;
 	flex-wrap: wrap;
 }
-.c_modal_wrap{width: 200px;}
-
+.c_calenderWrap{
+	display: flex;
+	width: 500px;
+}
 .day{
 	display: inline-block;
 	border: 1px solid #eeeeee;
@@ -41,4 +43,8 @@
 }
 .selectday{
 	border: 1px solid red !important;
+}
+.c_lastdayBot, .c_startdayBot{
+	display: flex;
+	flex-wrap: wrap;
 }
