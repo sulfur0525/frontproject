@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 페이지</title>
+<!-- 반응형 : 뷰포트 -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">   
+   
+   <!-- 사용자정의 css -->
+   
+   <link href="login.css" rel="stylesheet">   
+
+   <!-- 부트스트랩 : css -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+   <div class="b_wrap"> <!-- 0201 05:59 -->
+
+      <div class="b_header"></div> <!-- 헤더 -->
+      <div class="b_content">
+      		<div>
+				<p>홈/로그인</p>
+			</div>
+      	 <div class="b_인삿말">
+      		<h3> 신라호텔에 오신걸 환영 합니다 </h3>
+      		<p> 회원 가입을 하시면 다양한 혜택 어쩌구 저쩌구~~. </p>
+      	</div>
+         <div class="b_member">
+            <h3> 회원 로그인 </h3>
+            <div class="b_loginbox">
+	            <table class="b_logintable" >
+					<tr> 
+						<td>아이디</td> <td><input type="text"></td>
+						<td rowspan="2">
+						<a href="signup.html"><input type="button" value="로그인" class="b_loginbtn"></a></td>
+					</tr>				
+					<tr>
+						<td>비밀번호</td> <td><input type="password"></td>
+					</tr>					
+				</table>
+				<div class="b_ckeckbox">
+				<input type="checkbox" ><span>아이디저장</span>
+				</div>
+			</div>
+            <a href="#"><button class="b_subbtn" type="button"> 아이디찾기 |</button></a>
+            <a href="#"><button class="b_subbtn" type="button"> 비밀번호찾기 |</button></a>
+            <a href="turms.html"><button class="b_subbtn" type="button"> 회원가입 </button></a>               
+         </div>
+         
+         <div class="b_member">
+               <h3> 비회원 로그인 </h3>
+               <div class="b_loginbox">
+	               <table class="b_logintable">
+	            	   <tr> 
+							<td>이 름</td> <td><input type="text" class="input_id"></td>
+							<td rowspan="2">
+							<a href="#"><input type="button" value="로그인" class="b_loginbtn"></a></td>
+						</tr>				
+						<tr>
+							<td>전화번호</td> <td><input type="password" class="input_pw"></td>
+						</tr>					
+					</table> 
+				</div>   
+         </div>
+      
+      
+      </div> <!-- 본문 -->
+      <div class="b_footer"></div> <!-- 푸터 -->
+      
+   </div>
+
+
+
+   <!-- 부트스트랩 : js -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
