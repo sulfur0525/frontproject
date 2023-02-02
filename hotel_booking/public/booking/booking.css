@@ -31,17 +31,14 @@
 	flex-wrap: wrap;
 }
 .c_modal_wrap{width: 200px;}
+
 .day{
 	display: inline-block;
 	border: 1px solid #eeeeee;
 	width: 14%;	/* 100/7 = 14.2~~~ */
-	overflow: hidden;			/* 내용이 구역보다 커졌을때 숨김 */
+	overflow: hidden;
+	text-align: center;
 }
-
-.content{
-	display: inline-block;
-	border: 1px solid #eeeeee;
-	width: 14%;	/* 100/7 = 14.2~~~ */
-	height: 100px;
-	overflow: hidden;			/* 내용이 구역보다 커졌을때 숨김 */
+.selectday{
+	border: 1px solid red !important;
 }
