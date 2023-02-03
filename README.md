@@ -38,7 +38,7 @@
 HTML, CSS, JS, 부트스트랩(원하는 사람만)
 
 ## 6.프로젝트 초기 페이지/구조도
-![image](https://user-images.githubusercontent.com/121651359/216262411-1d30964b-c728-4f13-a300-2de66c5ecb8d.png)
+![1](https://user-images.githubusercontent.com/67307023/216479089-ab9b1580-c461-40f4-ac9c-286a3ee2a64f.png)
 ![image](https://user-images.githubusercontent.com/121651359/216262608-52dba618-f8fb-46a1-9c44-a326f9d3fbac.png)
 
 ## 7. 프로젝트 초기 폴더/파일 구조도
