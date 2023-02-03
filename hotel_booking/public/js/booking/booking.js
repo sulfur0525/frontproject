@@ -66,13 +66,13 @@ function first_print(){
 	let selectday = first_date
 	
 	// 3. html '요일' 구성
-	let html = `<div class="day weekday sunday">일</div>
-				<div class="day weekday">월</div>
-				<div class="day weekday">화</div>
-				<div class="day weekday">수</div>
-				<div class="day weekday">목</div>
-				<div class="day weekday">금</div>
-				<div class="day weekday">토</div>`
+	let html = `<div class="c_day weekday sunday">일</div>
+				<div class="c_day weekday">월</div>
+				<div class="c_day weekday">화</div>
+				<div class="c_day weekday">수</div>
+				<div class="c_day weekday">목</div>
+				<div class="c_day weekday">금</div>
+				<div class="c_day weekday">토</div>`
 				
 		// * 1.현재 설정된 월의 마지막 일 구하는 방법
 	let lastday = new Date(year, month, 0).getDate();
@@ -84,12 +84,12 @@ function first_print(){
 	
 	// 1일 시작 전 공백 만들기
 	for(let b=0; b<weekday;b++){
-		html += `<div class="day"></div>`
+		html += `<div class="c_day"></div>`
 	}
 	// 일 만들기 [1일부터 ~ 마지막 일(월마다 다름)까지]
 	for(let day=1;day<=lastday;day++){
-		if(day==selectday){html += `<div class="day selectday" onclick="firstselcet(${year},${month},${day})">${day}</div>`
-		}else{html += `<div class="day" onclick="firstselcet(${year},${month},${day})">${day}</div>`}
+		if(day==selectday){html += `<div class="c_day selectday" onclick="firstselcet(${year},${month},${day})">${day}</div>`
+		}else{html += `<div class="c_day" onclick="firstselcet(${year},${month},${day})">${day}</div>`}
 	} //for e
 	// 4. 마크업 출력
 	document.querySelector('.c_startmonth').innerHTML = `${year}년${month}월`;
@@ -102,22 +102,22 @@ function last_print(){
 	let year = last_year
 	let month = last_month
 	let selectday = last_date
-	let html = `<div class="day weekday sunday">일</div>
-				<div class="day weekday">월</div>
-				<div class="day weekday">화</div>
-				<div class="day weekday">수</div>
-				<div class="day weekday">목</div>
-				<div class="day weekday">금</div>
-				<div class="day weekday">토</div>`
+	let html = `<div class="c_day weekday sunday">일</div>
+				<div class="c_day weekday">월</div>
+				<div class="c_day weekday">화</div>
+				<div class="c_day weekday">수</div>
+				<div class="c_day weekday">목</div>
+				<div class="c_day weekday">금</div>
+				<div class="c_day weekday">토</div>`
 	let lastday = new Date(year, month, 0).getDate();
 		// * 2. 현재 캘린더 설정된 날짜의 1일 시작요일 구하기
 	let weekday = new Date(year, month-1, 1).getDay();
 	for(let b=0; b<weekday;b++){
-		html += `<div class="day"></div>`
+		html += `<div class="c_day"></div>`
 	}
 	for(let day=1;day<=lastday;day++){
-		if(day==selectday){html += `<div class="day selectday" onclick="lastselcet(${year},${month},${day})">${day}</div>`
-		}else{html += `<div class="day" onclick="lastselcet(${year},${month},${day})">${day}</div>`}
+		if(day==selectday){html += `<div class="c_day selectday" onclick="lastselcet(${year},${month},${day})">${day}</div>`
+		}else{html += `<div class="c_day" onclick="lastselcet(${year},${month},${day})">${day}</div>`}
 	} //for e
 	document.querySelector('.c_lastmonth').innerHTML = `${year}년${month}월`;
 	document.querySelector('.c_lastdayBot').innerHTML = html;
@@ -218,7 +218,7 @@ function print_room(x){
 			document.querySelector('.c_selectinfo').innerHTML = `
 				<div class="c_selectRoomName" value="${room[i].name}">${room[i].name}</div>
 				<div class="c_selectPrice" value="${selectprice.toLocaleString()}">${selectprice.toLocaleString()}</div>`
-			document.querySelector('.c_info_imagebox').innerHTML = `<img class="c_info_image" src="img/${room[i].img}">`
+			document.querySelector('.c_info_imagebox').innerHTML = `<img class="c_info_image" src="../img/booking/${room[i].img}">`
 		}
 	}
 }
