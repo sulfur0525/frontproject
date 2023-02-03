@@ -50,3 +50,7 @@ document.querySelector('.title5').addEventListener('click', (e)=>{
 	document.querySelector('.sub4').style.display = 'none'
 	document.querySelector('.sub2').style.display = 'none'
 })
+
+
+
+

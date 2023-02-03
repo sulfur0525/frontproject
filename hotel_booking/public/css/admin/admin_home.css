@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* 홈섹션의 내용 */
+.hide{display: none;}
 .contents{
 	width: auto;
 	padding: 20px;
@@ -57,7 +58,7 @@
 .date{font-size: 12px;}
 
 .share{font-size: 17px; margin-left: 10px;}
-.percent{color: red;font-size: 17px;}
+.percent{color: red;font-size: 17px;margin-left: 10px;}
 
 .roomcnt th, .roomcnt td{
 	border: 1px solid black;
@@ -81,6 +82,7 @@
 }
 
 .b_situ{
+	padding-top : 10px;
 	width: 94%;
 	margin: 0 3%;
 	text-align: center;
@@ -109,12 +111,18 @@
 	align-items: flex-end;
 	padding-bottom: 20px;
 }
-
+.grhcol{
+	width: 100%;
+	background-color: #adadad;
+	text-align: center;
+}
 .roongrh{
 	background-color : #eeeeee;
 	width: 14%;
 	margin: 0 3%;
 	height: 80%;
+	display: flex;
+	align-items: flex-end;
 }
 .bar_cnt{
 	width: 100%;
@@ -132,6 +140,7 @@
 .typecnt th, .typecnt td{
 	border: 1px solid black;
 	padding: 5px;
+	text-align: center;
 }
 
 .typecnt th{

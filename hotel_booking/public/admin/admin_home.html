@@ -28,7 +28,7 @@
 					<span class="nav1_title">홈</span>
 				<li>
 				<li>	<!-- 좌측 사이드바1 아이템1개 -->
-					<a href="admin.html" class="nav1_item adminpage"><img alt="" src="../img/admin/nav_02.png"></a>
+					<a href="admin_realtime.html" class="nav1_item adminpage"><img alt="" src="../img/admin/nav_02.png"></a>
 					<span class="nav1_title">관리</span>
 				<li>
 				<li>	<!-- 좌측 사이드바1 아이템1개 -->
@@ -37,7 +37,89 @@
 				<li>
 			</ul>
 		</div>
+		<div class="navbox2 hide" > <!-- 좌측 사이드바2 -->
+			<div class="left_menu">
+				<div class="title_box"><!-- 좌측 사이드바2 타이틀 -->
+					<h1 class="nav2_title"> 이젠 호텔&리조트 </h1>
+				</div>
+				
+				<ul class="menus">
+					<li class="menu"><!-- 좌측 사이드바2 아이템1개 -->
+						<a class="menu_title title1"><div><img alt="" src="../img/admin/nav_04.png">객실 예약 관리</div>
+						<span><img alt="" src="../img/admin/nav_06.png"> </span></a>
 
+						<ul class="sub_menus sub1"><!-- 서브아이템 모음 -->
+							<li class="sub_menu"><!-- 서브아이템 1개 -->
+								<a><img alt="" src="../img/admin/nav_07.png">객실 상태(당일)</a>
+							</li>
+							<li class="sub_menu"><!-- 서브아이템 1개 -->
+								<a><img alt="" src="../img/admin/nav_07.png">객실 현황표</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="menu"><!-- 좌측 사이드바2 아이템1개 -->
+						<a class="menu_title title2"><div><img alt="" src="../img/admin/nav_04.png">객실/예약 조회</div>
+						<span><img alt="" src="../img/admin/nav_06.png"> </span></a>
+						
+						<ul class="sub_menus sub2"><!-- 서브아이템 모음 -->
+							<li class="sub_menu"><!-- 서브아이템 1개 -->
+								<a><img alt="" src="../img/admin/nav_07.png">객실/예약 조회</a>
+							</li>
+							<li class="sub_menu"><!-- 서브아이템 1개 -->
+								<a><img alt="" src="../img/admin/nav_07.png">객실 재고 조회</a>
+							</li>
+							<li class="sub_menu"><!-- 서브아이템 1개 -->
+								<a><img alt="" src="../img/admin/nav_07.png">매출/입금 조회</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="menu"><!-- 좌측 사이드바2 아이템1개 -->
+						<a class="menu_title title3"><div><img alt="" src="../img/admin/nav_04.png">회원정보 조회</div>
+						<span><img alt="" src="../img/admin/nav_06.png"> </span></a>
+						
+						<ul class="sub_menus sub3"><!-- 서브아이템 모음 -->
+							<li class="sub_menu"><!-- 서브아이템 1개 -->
+								<a><img alt="" src="../img/admin/nav_07.png">회원정보 조회</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="menu"><!-- 좌측 사이드바2 아이템1개 -->
+						<a class="menu_title title4"><div><img alt="" src="../img/admin/nav_04.png">통계</div>
+						<span><img alt="" src="../img/admin/nav_06.png"> </span></a>
+						
+						<ul class="sub_menus sub4"><!-- 서브아이템 모음 -->
+							<li class="sub_menu"><!-- 서브아이템 1개 -->
+								<a><img alt="" src="../img/admin/nav_07.png">객실사용 통계</a>
+							</li>
+							<li class="sub_menu"><!-- 서브아이템 1개 -->
+								<a><img alt="" src="../img/admin/nav_07.png">매출 통계</a>
+							</li>
+							<li class="sub_menu"><!-- 서브아이템 1개 -->
+								<a><img alt="" src="../img/admin/nav_07.png">회원 통계</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu"><!-- 좌측 사이드바2 아이템1개 -->
+						<a class="menu_title title5"><div><img alt="" src="../img/admin/nav_04.png">객실 설정관리</div>
+						<span><img alt="" src="../img/admin/nav_06.png"> </span></a>
+						
+						<ul class="sub_menus sub5"><!-- 서브아이템 모음 -->
+							<li class="sub_menu"><!-- 서브아이템 1개 -->
+								<a><img alt="" src="../img/admin/nav_07.png">객실요금 설정</a>
+							</li>
+							<li class="sub_menu"><!-- 서브아이템 1개 -->
+								<a><img alt="" src="../img/admin/nav_07.png">객실타입 설정</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+<!-- ------------------------------------------------------------- -->
 		<div class="contents">
 			<div class="con_section1">
 				<div class="con_subleft">
@@ -51,7 +133,7 @@
 						 	<span class="percent">0%</span>
 						</div>
 						<table class="roomcnt">
-							<thead>
+							<!-- <thead>
 								<tr>
 									<th>구분</th>
 									<th>더블</th>
@@ -72,7 +154,7 @@
 								<tr>
 									<td>객실 재고</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
 								</tr>
-							</tbody>
+							</tbody> -->
 						</table>
 					</div>
 				</div>
@@ -82,32 +164,32 @@
 					</div>
 					<div class="con_con2">
 						<table class="b_situ">
-							<tbody>
+							<!-- <tbody>
 								<tr><td>고객명</td><td>객실 타입</td><td>입실날짜</td><td>숙박일수</td></tr>
 								<tr><td>고객명</td><td>객실 타입</td><td>입실날짜</td><td>숙박일수</td></tr>
 								<tr><td>고객명</td><td>객실 타입</td><td>입실날짜</td><td>숙박일수</td></tr>
 								<tr><td>고객명</td><td>객실 타입</td><td>입실날짜</td><td>숙박일수</td></tr>
 								<tr><td>고객명</td><td>객실 타입</td><td>입실날짜</td><td>숙박일수</td></tr>
-							</tbody>
+							</tbody> -->
 						</table>
 					</div>
 				</div>
 			</div>
 			<div class="con_section2">
 				<div class="con_head">
-					<h1>객실 사용 현황</h1>
+					<h1>실시간 객실 사용 현황</h1>
 				</div>
 				<div class="con_con3">
 					<div class="bar_grh">
-						<div class="roongrh">더블</div>
-						<div class="roongrh">디럭스</div>
-						<div class="roongrh">스위트</div>
-						<div class="roongrh">트윈</div>
-						<div class="roongrh">패밀리</div>
+						<div class="roongrh"><div class="grhcol col1">더블</div></div>
+						<div class="roongrh"><div class="grhcol col2">디럭스</div></div>
+						<div class="roongrh"><div class="grhcol col3">스위트</div></div>
+						<div class="roongrh"><div class="grhcol col4">트윈</div></div>
+						<div class="roongrh"><div class="grhcol col5">패밀리</div></div>
 					</div>
 					<div class="bar_cnt">
 						<table class="typecnt">
-							<thead>
+							<!-- <thead>
 								<tr>
 									<th>더블</th>	<th>디럭스</th><th>스위트</th><th>트윈</th><th>패밀리</th>
 								</tr>
@@ -116,7 +198,7 @@
 								<tr>
 									<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
 								</tr>
-							</tbody>
+							</tbody> -->
 						</table>
 					</div>
 				</div>
@@ -132,6 +214,7 @@
 	
 	
 	<!-- 사용자정의 js-->
+	<script type="text/javascript" src="../js/admin/db.js"></script>
 	<script type="text/javascript" src="../js/admin/admin.js"></script>
 	<script type="text/javascript" src="../js/admin/admin_home.js"></script>
 </body>
