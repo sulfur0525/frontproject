@@ -5,11 +5,13 @@ function room_list(){
 	let html=''
 	
 	rooms.forEach((o)=>{
-		
-		console.log(realtime.includes(o.호수))
-		console.log(o.호수)
-		if(realtime.includes(o.호수)){
-			html +=`<li class="list_item"><!-- 사용중인 객실 -->
+		let real = false; 
+		let 
+		realtime.forEach((j)=>{
+			if(o.호수==j.호수){return	true}})
+			
+		if(o.호수==101){
+						html +=`<li class="list_item"><!-- 사용중인 객실 -->
 						<ul class="item_title">
 							<li class="t_ho">${o.호수}</li>
 							<li>${o.객실타입}</li>
