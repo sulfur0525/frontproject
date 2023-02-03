@@ -1,26 +1,26 @@
 @charset "EUC-KR";
 
 .b_turms input{
-	margin-left: 10px; margin-bottom: 10px;
+	margin-left:70px;
+	margin-top: 10px; margin-bottom: 10px;
+	
 }
-.b_turms_box span{ font-size: 13px;}
+.b_turms_box span{ font-size: 13px; text-align: left;}
 .b_turms1{
 	border:1px solid gray;
-	width:90%; height: 150px; 
-	overflow: scroll;
-	margin : 10px ; font-family: "¸¼Àº°íµñ";
+	width:90%; height: 130px; 
+	overflow: scroll;  font-family: "¸¼Àº°íµñ";
 	font-size: 10px; padding : 10px 10px;
 }
 .b_turmsbtn{
-	height: 100px; width : 500px;
+	height: 50px; width : 500px;
 	display : flex; justify-content:flex-start;
 
 }
-.b_turmsbtn button{
-	
+.b_turmsbtn button{	
 	background-color : white; text-align : center;
 	border : 1px solid gray; border-radius : 3px;
-	width: 80px; height: 50px;
+	width: 80px; height: 40px;
 	margin : 30px 20px;
 	
 	
