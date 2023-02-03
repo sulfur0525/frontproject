@@ -1,38 +1,77 @@
 @charset "UTF-8";
 
-/* *{border: 1px solid red;} */
 
 .c_wrap{
 	margin: 0 auto;
 	width: 1200px;
-}
-.c_mainbox{display: flex;}
-.c_left_box{
-	width: 80%;
+	border: 1px solid black;
 }
 
-.c_selectbox{width: 20%;}
-.c_info_image{width: 30%;}
-.c_roomInfo{width: 50%;}
-.c_typeSelectBtn{width: 20%;}
-.c_booking_info{height: 300px;}
-.c_booking_info, .c_date,.c_adult,.c_child{
+.c_mainbox{display: flex; }
+.c_dateseletbox{display: flex; height: 10%;}
+.c_dateseletbox div{margin: 10px;}
+.c_left_box{width: 80%;}
+
+.c_selectbox{width: 20%; margin: 20px;}
+.c_info_imagebox{width: 45%; padding: 20px; border-right: 2px solid black;}
+.c_roomInfo{
+	width: 50%;
+	margin: 20px;
+	}
+.c_typeSelectBtn{
+	width: 20%;
+	}
+.c_booking_info{
+	height: 300px; 
+	border: 1px solid black;
+}
+.c_booking_info, .c_date{
 	display: flex;
 	justify-content: space-between;
 }
-
-/* .c_roomoption{
-	display: none;
-} */
-
-.c_modal_box{
+.c_adult,.c_child{
 	display: flex;
 	justify-content: flex-start;
-	flex-wrap: wrap;
 }
-.c_calenderWrap{
-	display: flex;
-	width: 500px;
+.c_member{margin: 10px; border: 1px solid black; text-align: center;}
+.c_roomoption{
+	border: 1px solid black;
+	margin: 0 auto;
+	display: none;
+	text-align: right;
+}
+.c_calimgbox{width: 25px; height: 25px;}
+.c_calimg{width: 100%; height: 100%;}
+.memberValue{
+	width: 15%;
+	margin: 10px;
+}
+.c_memberselectbtn span{
+	margin: 10px;
+	vertical-align: middle;
+}
+.c_select_room{
+	width: 300px; height: 50px;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 10px;
+}
+.c_modal_wrap{
+	position: fixed;
+	width: 100%; height: 100%;
+	top: 0; left:0; 
+	z-index: 1030;
+	border: 1px solid red;
+	display: none;
+}
+.c_calenderWrap{	
+	border: 1px solid black;
+	background-color: white;
+	position: absolute;
+	top : 100px; left: 500px;
+	width: 800px;
+	padding: 3%;
+	border-radius: 5%;
 }
 .day{
 	display: inline-block;
@@ -48,3 +87,19 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+.c_modal_box{display: flex;}
+.c_info_image{width: 100%; height: 100%; padding: 10px;}
+.c_selectRoomName, .c_selectPrice{
+	text-align: right;
+	width: 100%;
+	height: 100px;
+	border-bottom: 2px solid black;
+}
+
+
+
+
+
+
+
+
