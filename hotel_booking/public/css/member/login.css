@@ -17,14 +17,21 @@ a{text-decoration: none; color: black}
    border: 1px solid black;   
   
 }
+.b_contentbox{
+	width: 70%; height: 100%;
+}
 .b_content_left{font-size: 12px; margin: 5px 10px;}
 .b_intro p{font-size: 15px;}
 .b_intro{
-	text-align: center; height: 100px;
+	text-align: center; height: 80px;
 	margin : 20px;
 }
 .b_intro h3{color: #865009;}
-.b_intro p{font-size: 15px;}
+.b_intro p{
+	font-size: 15px; width : 800px;
+	border-bottom: 1px solid #865009;
+	padding-bottom: 10px;
+ }
 .b_member{
    width: 800px; height: 300px;
    
