@@ -21,6 +21,7 @@
 a{ text-decoration: none; color: black; }
 li{list-style: none;}
 /* ------------------------------------------------------------------------ */
+html,body{height: 100%;}
 .wrap{
 	width: 1200px;
 	height : 100%;
@@ -31,8 +32,9 @@ li{list-style: none;}
 /* 사이드바1----------------------------------------------------------------------- */
 .navbox1{
 	width: 80px;
-	height : 800px;
+	height :100%;
 	background-color: #eeeeee;
+	padding-top:20px; 
 }
 .nav1_item img{
 	height: 50px;
@@ -54,10 +56,10 @@ li{list-style: none;}
 /* 사이드바2--------------------------------------------------------------------------------- */
 .navbox2{
 	width: 230px;
-	height : 800px;
+	height : 100%;
 	background-color: #E7ECF1;
-	display: none;
 }
+.nav_home{display: none;}
 .left_menu{
 	width: 230px;
 }
@@ -107,10 +109,13 @@ li{list-style: none;}
 .sub_menu a img{
 	padding: 0px 6px;
 }
-.contents{
-	width: auto;
-}
-.booking{
-	width: 100%
-}
+
+/* --------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
 

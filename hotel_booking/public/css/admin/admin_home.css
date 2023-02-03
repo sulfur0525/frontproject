@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* 홈섹션의 내용 */
+.hide{display: none;}
+.contents{
+	width: auto;
+	padding: 20px;
+	background-color: #dedede;
+}
+
+.con_section1{
+	height: 330px;
+	padding-bottom : 24px;
+	width: 1080px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.con_head{
+	height: 40px;
+	width: 100%;
+	background-color: #686868;
+	line-height: 40px;
+}
+
+.con_head h1{
+	padding-left:10px;
+	color: white;
+}
+
+
+/* ----------------------------------------- */
+.con_con1{
+	height: 290px;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction : column;
+	justify-content: space-around;
+}
+
+.con_subleft{
+	width: 49%;
+	height : 100%;
+}
+
+.roomcnt{
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 94%;
+	margin: 0 3%;
+	text-align: center;
+}
+
+.roomShare{
+	text-align: center;
+}
+
+.date{font-size: 12px;}
+
+.share{font-size: 17px; margin-left: 10px;}
+.percent{color: red;font-size: 17px;margin-left: 10px;}
+
+.roomcnt th, .roomcnt td{
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.roomcnt th{
+	background-color: #eeeeee;
+}
+/* --------------------------------- */
+.con_con2{
+	height: 290px;
+	width: 100%;
+	background-color: white;
+}
+
+.con_subright{
+	width: 49%;
+	height : 100%; 
+	margin-left: 2%;
+}
+
+.b_situ{
+	padding-top : 10px;
+	width: 94%;
+	margin: 0 3%;
+	text-align: center;
+}
+.b_situ td{
+	padding: 5px;
+}
+
+/* ------------------------------ */
+.con_section2{
+	height: 450px;
+	width: 1080px;
+}
+.con_con3{
+	height: 370px;
+	width: 100%;
+	background-color: white;
+	padding: 20px 0;
+}
+
+.bar_grh{
+	height: 280px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	padding-bottom: 20px;
+}
+.grhcol{
+	width: 100%;
+	background-color: #adadad;
+	text-align: center;
+}
+.roongrh{
+	background-color : #eeeeee;
+	width: 14%;
+	margin: 0 3%;
+	height: 80%;
+	display: flex;
+	align-items: flex-end;
+}
+.bar_cnt{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+
+.typecnt{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.typecnt th, .typecnt td{
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+.typecnt th{
+	background-color: #eeeeee;
+}
