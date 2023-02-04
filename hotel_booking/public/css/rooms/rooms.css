@@ -3,8 +3,24 @@
 *{
  margin: 0 auto ;
  padding : 0px;
- border: 1px solid red;
+/*  border: 1px solid red; */
  list-style-type: none;
+ @font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+   font-family: 'Happiness-Sans-Regular';
+    src:url("/hotel_booking/font/Happiness-Sans-Regular.woff");
+}
 }
 /* --------공통 구역------- */
 
@@ -19,32 +35,54 @@
 .D_sidebar{
 	background-color: #F1E3C4;
 	padding: 2% 2%;
-	width:264px;
 	height:692px;
-	margin-right: 60px;
+	margin-right: 40px;
 	}
 
 .D_sidebar h2{
 	text-align: left;
 	color: #432C10;
-	border-bottom: 5px solid black;
-	padding-left: 5%;
-	padding-bottom: 3%;
+	border-bottom: 5px solid #432C10;
+	padding: 4% 0% 7% 1%;
 	margin: 0px;
+	font-weight:normal;
 	}
 .D_sidebar_menu{
 	padding: 0;
 	
 }
-
-
-.D_sidebar_menu li{
-	padding: 10% 0% 0% 5% ;
-	align-items: flex-start;
-	line-height: 100%;
+.D_sidebar_menu h4{
+	padding: 7% 0% 5% 2%;
+	font-size: 15px;
+	color : #633E10 ! important;
+	font-weight: bolder;
 }
 
 
+.D_sidebar_menu li{
+	font-family: 'Happiness-Sans-Regular';
+	font-weight : bold;
+	padding: 6% 0% 0% 1% ;
+	align-items: flex-start;
+	line-height: 100%; color: #967448;
+	opacity: 0.95;
+}
+.D_sidebar_last{
+	color : #633E10 ! important;
+}
+li a{
+	text-decoration: none;
+	color: #967448;
+}
+li a:hover{
+	background-color: #D3C09A; 
+}
+.D_sidebar_menulast{
+	padding: 7% 0% 5% 2%;
+	font-size: 15px;
+	color : #633E10;
+	font-weight: bolder;
+}
 
 .D_Roomclass{
 	padding: 10px 0px 3px 3px;
@@ -58,24 +96,32 @@
 	margin: 0% 2%;
 	font-size: 12px;
 }
-.D_all_btn{
-	margin: 54px 0px 0px 0px;
+.D_btn1{
+	border: 1px solid white;
+	margin: 64px 0px 0px 0px;
 	width: 216px; height: 46px;
 	background-color: #81725F;
 	color: #FFFFFF;
-	
+	font-family: 'Happiness-Sans-Title';
+	font-weight: bold;
 }
 
 
 .D_main_content{
-	width: 866px;
+	width: 100%;
 	margin: 0px 5px ;
 }
 .D_hotel_guide h2{
+	font-family: 'Happiness-Sans-Title';
+	font-size : 27px;
 	padding: 1%;
+	color: #432C10;
 }
 .D_hotel_guide p{
+	font-family: 'Happiness-Sans-Regular';
 	padding: 1%;
+	color: #444444;
+	font-size: 13px;
 }
 
 .D_Rooms_name{
@@ -93,10 +139,9 @@
 .D_intoduce_room{
 	width: 390px;
 	padding-top:1%;
-	float: left;
 }
 .D_Roomimg{
-	width: 385px;
+	width: 100%;
 }
 
 .D_explain{
@@ -110,12 +155,11 @@
 }
 
 .event{
-	align-items:flex-end;
 	vertical-align:top;
-	padding: 3px 7px 3px 7px;
-	width: 82px !important; height: 27px !important;
+	padding: 5px 10px 5px 10px;
 	font-size: 12px;
 	text-decoration: none;
+	font-family: 'Happiness-Sans-Regular';
 	}
 .book{
 	background-color:#3A3125; 
