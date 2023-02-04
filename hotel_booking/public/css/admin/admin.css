@@ -11,6 +11,10 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+	font-family: 'Happiness-Sans-Regular';
+    src:url("/hotel_booking/font/Happiness-Sans-Regular.woff");
+}
 /* 공통----------------------------------------------------------------------- */
 *{
 	font-family: 'Happiness-Sans-Bold';
@@ -20,93 +24,97 @@
 }
 a{ text-decoration: none; color: black; }
 li{list-style: none;}
+
 /* ------------------------------------------------------------------------ */
 html,body{height: 100%;}
-.wrap{
+.e_ad_wrap{
 	width: 1200px;
-	height : 100%;
+	height : 800px;;
 	min-height: 100%;
 	margin: 0 auto;
 	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
 }
 /* 사이드바1----------------------------------------------------------------------- */
-.navbox1{
+.e_navbox1{
 	width: 80px;
 	height :100%;
-	background-color: #eeeeee;
+	background-color: #D3C09A;
 	padding-top:20px; 
 }
-.nav1_item img{
+.e_nav1_item img{
 	height: 50px;
 }
 
-.nav1_item{
+.e_nav1_item{
 	display: inline-block;
 	width : 100%; 
     height: 65px;
     text-align: center;
     line-height: 65px;
 }
-.nav1_title{
+.e_nav1_title{
 	display : inline-block;;
 	width : 100%;
 	text-align: center;
 	margin-bottom: 10px; 
+	color: #A2A1A1;
 }
 /* 사이드바2--------------------------------------------------------------------------------- */
-.navbox2{
+.e_navbox2{
 	width: 230px;
 	height : 100%;
-	background-color: #E7ECF1;
+	background-color: #f1e3c4;;
 }
-.nav_home{display: none;}
-.left_menu{
+.e_nav_home{display: none;}
+.e_left_menu{
 	width: 230px;
 }
-.nav2_title{
+.e_nav2_title{
 	font-family: 'Happiness-Sans-Title';
 	text-align: center !important;
     height: 54px;
     line-height: 54px;
-    background: #d7dee5;
+    background: #e9dab8 ;
    	font-size: 20px;
 }
 
-.menu_title{
+.e_menu_title{
 	height: 45px;
 	line-height: 45px;
 	font-size: 18px;
 	padding: 0px 10px;
 	display: flex;
 	justify-content: space-between;
-	background-color: #E7ECF1;
+	background-color: #f1e3c4;
 	
 }
-.menu_title img{
+.e_menu_title img{
 	width: 20px;
 	vertical-align: middle;
 	padding: 0px 5px 3px 3px;
 }
-.menu span img{
+.e_menu span img{
 	width: 13px;
 	height: 10px;
 }
-.sub_menus{
+.e_sub_menus{
 	padding: 5px 0px;
-	background: #d7dee5;
+	background: #e9dab8;
 	display: none;
 }
-.sub_menu{
+.e_sub_menu{
 	padding-left: 21px;
 	
 }
-.sub_menu a{
+.e_sub_menu a{
 	display: block;
     height: 30px;
     line-height: 30px;
     font-weight: lighter;
 }
-.sub_menu a img{
+.e_sub_menu a img{
 	padding: 0px 6px;
 }
 
