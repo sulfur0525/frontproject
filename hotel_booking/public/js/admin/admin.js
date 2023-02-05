@@ -1,14 +1,108 @@
 console.log('하이요')
-navbox1_print()
+navbox_print()
+header_print()
+footer_print()
 
-function navbox1_print(){
-	let html1 = `<ul>
+function footer_print(){
+	let html = `<div class="ft_wrap">
+					<div class="ft_top"> <!-- 상단 푸터 -->
+						<div class="logobox2"><!-- logo -->
+							<a href="#">THE EZEN<br/> Hotels & Resort</a>
+						</div>
+						<div class="ft_inner">
+							<div class="top_inner">
+								<a>THE EZEN</a>
+								<a>EZEN MONOGRAM</a>
+								<a>EZEN STAY</a>
+							</div>
+							<div class="bottom_inner">
+								<ul class="bi_1">
+									<li>서울이젠호텔 02-2233-3131</li>
+									<li>제주이젠호텔 064-735-5114</li>
+									<li>이젠스테이	  02-2230-0700</li>
+									<li>이젠리워즈  02-2230-5528</li>
+								</ul>
+								<ul class="bi_2">
+									<li><a href="#">호텔이젠소개</a></li> |
+									<li><a href="#">고객문의</a></li> |
+									<li><a href="#">사이트맵</a></li> |
+									<li><a href="#">The Ezen shop</a></li> |
+									<li><a href="#">삼성상품권</a></li>
+								</ul>
+								<div>
+									<h4>SNS</h4>
+									<img style="height: 25px" src="../img/index/facebook.png">
+									<img style="height: 25px" src="../img/index/instagram.png">
+									<img style="height: 25px" src="../img/index/kakao-talk.png">
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="ft_bottom"><!-- 하단 푸터-->
+					<div>
+						<ul >
+							<li><a href="#">이젠리워즈 약관</a></li> |
+							<li><a href="#">개인정보처리방침</a></li> |
+							<li><a href="#">이메일무단수집금지</a></li> |
+							<li><a href="#">윤리경영(부정제보)</a></li> |
+							<li><a href="#">건축/시설물 안전관리</a></li> 
+						</ul>
+					</div>
+					<ul>
+						<li>(주) 호텔이젠 서울특별시 중구 동호로 249 (우 : 04605)</li>
+						<li>대표이사 누구누구</li>
+						<li>사업자등록번호 123-45-678912</li>
+						<li>통신판매신고번호 중구00123호</li>
+						<li class="bbox"><a href="#">사업자정보확인 ></a></li>
+						<li>호스팅서비스제공자 삼성SDS(주)</li>
+						<li>서울객실예약 ezen.reserve@samsung.com</li>
+						<li>제주객실예약 jeju.ezen@samsung.com</li>
+					</ul>
+					<span>COPYRIGHT © HOTEL SHILLA CO., LTD. ALL RIGHTS RESERVED.</span>
+				</div>`
+	
+	document.querySelector('.footer').innerHTML = html
+}
+
+function header_print(){
+	let html = `<div class="h_wrap">
+					<div class="btn"> <!-- 버튼 구역 -->
+						<button class="hotellsearch" style="height: 50px" type="button">호텔찾기<img style="width: 20px" src="../img/index/search.png"></button>
+						<button class="dining" style="height: 50px" type="button">예약<img style="width: 15px" src="../img/index/calendar.png"></button>
+					</div>
+					
+					<div class="logobox"><!-- logo -->
+						<a href="#">THE EZEN<br/> Hotels & Resort</a>
+					</div>
+					
+					<div class="menu"> <!-- 메뉴바 -->
+						<ul class="m_top">
+							<li><a href="#">로그인</a></li>|
+							<li><a href="#">이젠리워즈 가입</a></li>|
+							<li><a href="#">예약확인 ⋁</a></li>|
+							<li><a href="#">한국어 ⋁</a></li>
+						</ul>
+						<ul class="m_bottom">
+							<li><a href="#">호텔이젠 소개</a></li>
+							<li><a href="#">객실 소개</a></li>
+							<li><a href="#">예약하기</a></li>
+						</ul>
+					</div>
+				</div>`
+				
+	document.querySelector('.header').innerHTML = html
+}
+
+function navbox_print(){
+	let html1 = `<ul class="e_nav_items">
 					<li>	<!-- 좌측 사이드바1 아이템1개 -->
 						<a href="admin_home.html" class="e_nav1_item e_home"><img id="e_nav1" alt="" src="../img/admin/nav_01_1.png"></a>
 						<span class="e_nav1_title">홈</span>
 					<li>
 					<li>	<!-- 좌측 사이드바1 아이템1개 -->
-						<a href="admin.html" class="e_nav1_item e_adminpage"><img id="e_nav2" alt="" src="../img/admin/nav_02_1.png"></a>
+						<a href="admin_realtime.html" class="e_nav1_item e_adminpage"><img id="e_nav2" alt="" src="../img/admin/nav_02_1.png"></a>
 						<span class="e_nav1_title">관리</span>
 					<li>
 					<li>	<!-- 좌측 사이드바1 아이템1개 -->
@@ -29,24 +123,24 @@ function navbox1_print(){
 	
 							<ul class="e_sub_menus e_sub1"><!-- 서브아이템 모음 -->
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a><img alt="" src="../img/admin/nav_07.png">실시간 객실 상태</a>
+									<a href="admin_realtime.html"><img alt="" src="../img/admin/nav_07.png">실시간 객실 상태</a>
 								</li>
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a><img alt="" src="../img/admin/nav_07.png">객실 현황표</a>
+									<a href="#"><img alt="" src="../img/admin/nav_07.png">객실 현황표</a>
 								</li>
 							</ul>
 						</li>
 						
 						<li class="e_menu"><!-- 좌측 사이드바2 아이템1개 -->
-							<a class="e_menu_title title2"><div><img alt="" src="../img/admin/nav_04.png">객실/예약 조회</div>
+							<a class="e_menu_title e_title2"><div><img alt="" src="../img/admin/nav_04.png">객실/예약 조회</div>
 							<span><img alt="" src="../img/admin/nav_06.png"> </span></a>
 							
-							<ul class="e_sub_menus sub2"><!-- 서브아이템 모음 -->
+							<ul class="e_sub_menus e_sub2"><!-- 서브아이템 모음 -->
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a><img alt="" src="../img/admin/nav_07.png">객실/예약 조회</a>
+									<a href="admin_bookinglist.html"><img alt="" src="../img/admin/nav_07.png">객실/예약 조회</a>
 								</li>
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a><img alt="" src="../img/admin/nav_07.png">객실 재고 조회</a>
+									<a href="admin_roomstock.html"><img alt="" src="../img/admin/nav_07.png">객실 재고 조회</a>
 								</li>
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
 									<a><img alt="" src="../img/admin/nav_07.png">매출/입금 조회</a>
@@ -100,16 +194,6 @@ function navbox1_print(){
 	document.querySelector('.e_navbox1').innerHTML = html1
 	document.querySelector('.e_navbox2').innerHTML = html2
 }
-
-
-
-
-
-
-
-
-
-
 
 //마우스 올리면 색 변하게 
 document.querySelector('.e_home').addEventListener('mouseover',()=>{

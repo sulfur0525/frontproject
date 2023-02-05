@@ -1,0 +1,67 @@
+@charset "UTF-8";
+.e_sub2{
+	display: block;
+}
+
+.e_contents{
+	width: 890px;	
+}
+
+.e_con_title{
+	display: flex;
+	padding: 0 10px;
+	height: 54px;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.e_wide{margin: 0px; padding-right: 10px;}
+.e_title_name{margin: 0px;}
+.e_on_title img{
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+.e_title_name{
+	font-size: 20px;
+	padding-left: 10px;
+	height :54px;
+	line-height: 54px;
+	border-left: 1px solid #ccc;
+}
+
+.e_booking_list{
+	width: 890px;
+	padding: 0 10px;
+}
+
+.e_list_table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 20px;
+	width: 850px;
+	
+}
+
+.e_list_table th{
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	background-color: #D3C09A;
+}
+
+.e_list_table td{
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+
+
+
+

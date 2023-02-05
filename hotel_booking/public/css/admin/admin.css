@@ -16,20 +16,21 @@
     src:url("/hotel_booking/font/Happiness-Sans-Regular.woff");
 }
 /* 공통----------------------------------------------------------------------- */
-*{
-	font-family: 'Happiness-Sans-Bold';
+*{	font-family: 'Happiness-Sans-Regular';
 	font-size : 15px;
 	margin: 0px;
 	padding: 0px;
 }
-a{ text-decoration: none; color: black; }
+a{ 
+	text-decoration: none; color: black; 
+}
 li{list-style: none;}
 
 /* ------------------------------------------------------------------------ */
 html,body{height: 100%;}
 .e_ad_wrap{
 	width: 1200px;
-	height : 800px;;
+	height : 1000px;
 	min-height: 100%;
 	margin: 0 auto;
 	display: flex;
@@ -41,8 +42,13 @@ html,body{height: 100%;}
 	width: 80px;
 	height :100%;
 	background-color: #D3C09A;
-	padding-top:20px; 
+	color: #6A471B;
 }
+
+.e_nav_items{
+	padding-top: 20px;
+}
+
 .e_nav1_item img{
 	height: 50px;
 }
@@ -60,12 +66,14 @@ html,body{height: 100%;}
 	text-align: center;
 	margin-bottom: 10px; 
 	color: #A2A1A1;
+	font-family: 'Happiness-Sans-Bold';
 }
 /* 사이드바2--------------------------------------------------------------------------------- */
 .e_navbox2{
 	width: 230px;
 	height : 100%;
-	background-color: #f1e3c4;;
+	background-color: #f1e3c4;
+	color: #6A471B;
 }
 .e_nav_home{display: none;}
 .e_left_menu{
@@ -76,8 +84,9 @@ html,body{height: 100%;}
 	text-align: center !important;
     height: 54px;
     line-height: 54px;
-    background: #e9dab8 ;
+    background-color: #e9dab8 ;
    	font-size: 20px;
+   	color: #6A471B;
 }
 
 .e_menu_title{
@@ -88,8 +97,14 @@ html,body{height: 100%;}
 	display: flex;
 	justify-content: space-between;
 	background-color: #f1e3c4;
-	
+	color: #6A471B;
+	font-family: 'Happiness-Sans-Bold'!important;
 }
+
+.e_menu_title div,.e_menu_title span{
+	margin: 0px;
+}
+
 .e_menu_title img{
 	width: 20px;
 	vertical-align: middle;
@@ -106,13 +121,12 @@ html,body{height: 100%;}
 }
 .e_sub_menu{
 	padding-left: 21px;
-	
 }
 .e_sub_menu a{
 	display: block;
     height: 30px;
     line-height: 30px;
-    font-weight: lighter;
+    color: #6A471B;
 }
 .e_sub_menu a img{
 	padding: 0px 6px;

@@ -50,6 +50,18 @@ function roomcnt(){
 	document.querySelector('.percent').innerHTML=`${(sale(6)/count(6))}%`
 }
 
+function type(i){
+	let type=''
+	
+	if(i==1){type='더블'}
+	else if(i==2){type='디럭스'}
+	else if(i==3){type='스위트'}
+	else if(i==4){type='트윈'}
+	else if(i==5){type='패밀리'}
+	
+	return type
+}
+
 function count(i){
 	let cnt = 0; 
 	let type=''
