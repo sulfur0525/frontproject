@@ -19,7 +19,7 @@ function bookinglist(){
 	
 	let 요금 = 0;
 	
-	booking.forEach((o)=>{
+	booking.forEach((o,i)=>{
 		roomtype.forEach((j)=>{
 			if(o.객실타입==j.객실타입){
 				요금=j.가격
@@ -27,7 +27,7 @@ function bookinglist(){
 		})
 		
 		html += `<tr>
-					<td width="10%">${o.예약번호}</td>
+					<td onclick="bo_modal(${i})" width="10%">${o.예약번호}</td>
 					<td width="10%">${o.고객명}</td>
 					<td width="15%">${o.전화번호}</td>
 					<td width="10%">${o.객실타입}</td>
@@ -42,3 +42,66 @@ function bookinglist(){
 	
 	document.querySelector('.e_list_table').innerHTML = html
 }
+
+
+function bo_modal(i){ 
+	document.querySelector('.booking_modal').style.display = 'flex'
+	
+	let 요금 = 0;
+	
+	booking.forEach((o,i)=>{
+		roomtype.forEach((j)=>{
+			if(o.객실타입==j.객실타입){
+				요금=j.가격
+			}
+		})
+	})
+	
+	
+	
+	let html = `<thead>
+						<tr>
+							<th class="rervnum" colspan="5">${booking[i].예약번호}</th>
+							<th id="close" onclick="close_modal()">X</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th id="roomtype" colspan="6">${booking[i].호수} ${booking[i].객실타입}</th>
+						</tr>
+						<tr>
+							<th width="10%">고객명 :</th> 
+							<td width="23%">${booking[i].고객명}</td>
+							<th width="10%">입실일자 :</th> 
+							<td width="23%">${booking[i].입실날짜}</td>
+							<th width="10%">연락처 :</th> 
+							<td width="23%">${booking[i].전화번호}</td>
+						</tr>
+						<tr>
+							<th width="10%">인원 :</th> 
+							<td width="23%">2</td>
+							<th width="10%">비고 :</th> 
+							<td width="23%">${booking[i].요청사항}</td>
+							<th width="10%">총 요금 :</th> 
+							<td width="23%">${요금*booking[i].숙박일수}</td>
+						</tr>
+					</tbody>`
+					
+	document.querySelector('.modal_table').innerHTML = html
+}
+
+function close_modal(){
+	console.log("작동하나?")
+	document.querySelector('.booking_modal').style.display = 'none'
+}
+
+
+
+
+
+
+
+
+
+
+
