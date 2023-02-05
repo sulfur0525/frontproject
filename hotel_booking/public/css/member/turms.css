@@ -1,7 +1,7 @@
 @charset "EUC-KR";
 
 .b_turms input{
-	margin-left:70px;
+	margin-left:40px;
 	margin-top: 10px; margin-bottom: 10px;
 	
 }
@@ -21,7 +21,7 @@
 	background-color : white; text-align : center;
 	border : 1px solid gray; border-radius : 3px;
 	width: 80px; height: 40px;
-	margin : 30px 20px;
+	margin : 30px 10px;
 	
 	
 }
