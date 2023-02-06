@@ -46,8 +46,8 @@ function roomcnt(){
 					</tr>
 				</tbody>`
 	
-	document.querySelector('.roomcnt').innerHTML=html;
-	document.querySelector('.percent').innerHTML=`${(sale(6)/count(6))}%`
+	document.querySelector('.e_roomcnt').innerHTML=html;
+	document.querySelector('.e_percent').innerHTML=`${(sale(6)/count(6))}%`
 }
 
 function type(i){
@@ -118,7 +118,7 @@ function bookinglist(){
 	
 	html +=`</tbody>`		
 	
-	document.querySelector('.b_situ').innerHTML = html
+	document.querySelector('.e_b_situ').innerHTML = html
 }
 
 /*-------------------------------------------------------------*/
@@ -141,7 +141,7 @@ function bargrh(){
 			}
 		})
 		console.log((cnt/count(i)))
-		document.querySelector('.col'+i).style.height = `${(cnt/count(i))*100}%`
+		document.querySelector('.e_col'+i).style.height = `${(cnt/count(i))*100}%`
 	}
 	
 	let html = `<thead>
@@ -155,7 +155,7 @@ function bargrh(){
 					</tr>
 				</tbody>`
 	
-	document.querySelector('.typecnt').innerHTML = html
+	document.querySelector('.e_typecnt').innerHTML = html
 	
 }
 

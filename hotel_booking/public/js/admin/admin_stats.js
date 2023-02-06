@@ -43,7 +43,7 @@ function grh_print(){
 		
 		html = `${date}`
 		
-		document.querySelector('.day'+i).innerHTML = html
+		document.querySelector('.e_day'+i).innerHTML = html
 	
 	
 	
@@ -66,7 +66,7 @@ function grh_print(){
 				}
 			})
 			console.log((cnt/count(i)))
-			document.querySelector('.typehe'+i+'-'+j).style.height = `${(cnt/count(i))*100}%`
+			document.querySelector('.e_typehe'+i+'-'+j).style.height = `${(cnt/count(i))*100}%`
 		}
 	}
 	

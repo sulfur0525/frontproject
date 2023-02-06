@@ -45,7 +45,7 @@ function bookinglist(){
 
 
 function bo_modal(i){ 
-	document.querySelector('.booking_modal').style.display = 'flex'
+	document.querySelector('.e_booking_modal').style.display = 'flex'
 	
 	let 요금 = 0;
 	
@@ -61,13 +61,13 @@ function bo_modal(i){
 	
 	let html = `<thead>
 						<tr>
-							<th class="rervnum" colspan="5">${booking[i].예약번호}</th>
-							<th id="close" onclick="close_modal()">X</th>
+							<th class="e_rervnum" colspan="5">${booking[i].예약번호}</th>
+							<th id="e_close" onclick="close_modal()">X</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<th id="roomtype" colspan="6">${booking[i].호수} ${booking[i].객실타입}</th>
+							<th id="e_roomtype" colspan="6">${booking[i].호수} ${booking[i].객실타입}</th>
 						</tr>
 						<tr>
 							<th width="10%">고객명 </th> 
@@ -87,12 +87,12 @@ function bo_modal(i){
 						</tr>
 					</tbody>`
 					
-	document.querySelector('.modal_table').innerHTML = html
+	document.querySelector('.e_modal_table').innerHTML = html
 }
 
 function close_modal(){
 	console.log("작동하나?")
-	document.querySelector('.booking_modal').style.display = 'none'
+	document.querySelector('.e_booking_modal').style.display = 'none'
 }
 
 

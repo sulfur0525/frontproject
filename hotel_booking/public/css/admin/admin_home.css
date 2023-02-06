@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /* 홈섹션의 내용 */
 .e_navbox2{display: none;}
-.contents{
+.e_contents{
 	width: auto;
 	padding: 20px;
 	background-color: white;
 }
 
-.con_section1{
+.e_con_section1{
 	height: 330px;
 	padding-bottom : 24px;
 	width: 1080px;
@@ -15,21 +15,21 @@
 	justify-content: space-between;
 }
 
-.con_head{
+.e_con_head{
 	height: 40px;
 	width: 100%;
 	background-color: #D3C09A;
 	line-height: 40px;
 }
 
-.con_head h1{
+.e_con_head h1{
 	padding-left:10px;
 	color: white;
 }
 
 
 /* ----------------------------------------- */
-.con_con1{
+.e_con_con1{
 	height: 290px;
 	width: 100%;
 	background-color: #f1e3c4;
@@ -38,12 +38,12 @@
 	justify-content: space-around;
 }
 
-.con_subleft{
+.e_con_subleft{
 	width: 49%;
 	height : 100%;
 }
 
-.roomcnt{
+.e_roomcnt{
 	border: 1px solid black;
 	border-collapse: collapse;
 	width: 94%;
@@ -51,60 +51,60 @@
 	text-align: center;
 }
 
-.roomShare{
+.e_roomShare{
 	text-align: center;
 }
 
-.date{font-size: 12px;font-family: 'Happiness-Sans-Title';}
+.e_date{font-size: 12px;font-family: 'Happiness-Sans-Title';}
 
-.share{font-size: 17px; margin-left: 10px;font-family: 'Happiness-Sans-Title';}
-.percent{color: red;font-size: 17px;margin-left: 10px;font-family: 'Happiness-Sans-Title';}
+.e_share{font-size: 17px; margin-left: 10px;font-family: 'Happiness-Sans-Title';}
+.e_percent{color: red;font-size: 17px;margin-left: 10px;font-family: 'Happiness-Sans-Title';}
 
-.roomcnt th, .roomcnt td{
+.e_roomcnt th, .e_roomcnt td{
 	border: 1px solid black;
 	padding: 5px;
 }
-.roomcnt td{background-color: white;}
-.roomcnt th{
+.e_roomcnt td{background-color: white;}
+.e_roomcnt th{
 	background-color: #D3C09A;
 	font-size: 12px;
 }
 /* --------------------------------- */
-.con_con2{
+.e_con_con2{
 	height: 290px;
 	width: 100%;
 	background-color: #f1e3c4;
 }
 
-.con_subright{
+.e_con_subright{
 	width: 49%;
 	height : 100%; 
 	margin-left: 2%;
 }
 
-.b_situ{
+.e_b_situ{
 	padding-top : 10px;
 	width: 94%;
 	margin: 0 3%;
 	text-align: center;
 }
-.b_situ td{
+.e_b_situ td{
 	padding: 5px;
 }
 
 /* ------------------------------ */
-.con_section2{
+.e_con_section2{
 	height: 450px;
 	width: 1080px;
 }
-.con_con3{
+.e_con_con3{
 	height: 400px;
 	width: 100%;
 	background-color: #f1e3c4;
 	padding: 20px 0;
 }
 
-.bar_grh{
+.e_bar_grh{
 	height: 280px;
 	width: 100%;
 	display: flex;
@@ -112,12 +112,12 @@
 	align-items: flex-end;
 	padding-bottom: 20px;
 }
-.grhcol{
+.e_grhcol{
 	width: 100%;
 	background-color: #D3C09A;
 	text-align: center;
 }
-.roongrh{
+.e_roongrh{
 	background-color : #eeeeee;
 	width: 14%;
 	margin: 0 3%;
@@ -125,7 +125,7 @@
 	display: flex;
 	align-items: flex-end;
 }
-.bar_cnt{
+.e_bar_cnt{
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -133,20 +133,20 @@
 }
 
 
-.typecnt{
+.e_typecnt{
 	margin-top : 20px;
 	border: 1px solid black;
 	border-collapse: collapse;
 }
 
-.typecnt th, .typecnt td{
+.e_typecnt th, .e_typecnt td{
 	border: 1px solid black;
 	padding: 5px 10px;
 	text-align: center;
 }
-.typecnt th{
+.e_typecnt th{
 	background-color: white;
 }
-.typecnt th{
+.e_typecnt th{
 	background-color: #D3C09A;
 }
