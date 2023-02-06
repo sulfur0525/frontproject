@@ -172,7 +172,7 @@ function navbox_print(){
 							
 							<ul class="e_sub_menus e_sub4"><!-- 서브아이템 모음 -->
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a href="admin_stats.html"><img alt="" src="../img/admin/nav_07.png">매출 통계</a>
+									<a href="admin_stats.html"><img alt="" src="../img/admin/nav_07.png">예약 통계</a>
 								</li>
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
 									<a><img alt="" src="../img/admin/nav_07.png">회원 통계(x)</a>
