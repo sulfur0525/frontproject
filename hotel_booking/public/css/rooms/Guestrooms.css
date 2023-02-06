@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.D_imgline{
+	display:flex;
+	display:inline-block;
+	font-size: 12px;
+	vertical-align:top;
+	justify-content: space-around;
+	padding-left: 315px;
+	font-weight: lighter;
+	}
+.D_room_detailed{
+	width: 100%;
+}
+.D_detailed{
+	display: flex;
+	margin-top: 55px;
+}
+.D_guestroom_btn{
+	padding: 5px 10px 5px 10px;
+	margin-left:100px;
+	font-size: 12px;
+	text-decoration: none;
+	border: 1px solid white;
+	margin: 64px 0px 0px 0px;
+	width: 216px; height: 46px;
+	background-color: #81725F;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: right;
+	font-family: 'Happiness-Sans-Regular';
+	}
