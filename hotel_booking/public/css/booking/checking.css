@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.c_checkingNo{
+	width: 300px;
+}
+
+.checkingbox{
+	display: none;
+}
+.c_wrap div{margin: 5%;}
+.c_wrap{margin: 5%;}
