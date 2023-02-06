@@ -70,11 +70,11 @@
 .D_sidebar_last{
 	color : #633E10 ! important;
 }
-li a{
+.D_sidebar_menu li a{
 	text-decoration: none;
 	color: #967448;
 }
-li a:hover{
+.D_sidebar_menu li a:hover{
 	background-color: #D3C09A; 
 }
 .D_sidebar_menulast{

@@ -67,25 +67,25 @@ function footer_print(){
 }
 
 function header_print(){
-	let html = `<div class="header"> <!-- 해더 -->
-			<div class="h_wrap">
-				<div class="btn"> <!-- 버튼 구역 -->
-					<button class="hotellsearch" style="height: 50px" type="button">호텔찾기<img style="width: 20px" src="../img/index/icon/search.png"></button>
-					<button class="dining" style="height: 50px" type="button">예약<img style="width: 15px" src="../img/index/icon/calendar.png"></button>
+	let html = `<div class="a_header"> <!-- 해더 -->
+			<div class="a_h_wrap">
+				<div class="a_btn"> <!-- 버튼 구역 -->
+					<button class="a_hotellsearch" style="height: 50px" type="button">호텔찾기<img style="width: 20px" src="../img/index/icon/search.png"></button>
+					<button class="a_dining" style="height: 50px" type="button">예약<img style="width: 15px" src="../img/index/icon/calendar.png"></button>
 				</div>
 				
-				<div class="logobox"><!-- logo -->
+				<div class="a_logobox"><!-- logo -->
 					<a href="../index.html">THE EZEN<br/> Hotels & Resort</a>
 				</div>
 				
-				<div class="menu"> <!-- 메뉴바 -->
-					<ul class="m_top">
+				<div class="a_menu"> <!-- 메뉴바 -->
+					<ul class="a_m_top">
 						<li><a href="../member/login.html">로그인</a></li>|
 						<li><a href="../member/turms.html">이젠리워즈 가입</a></li>|
 						<li><a href="#">예약확인 ⋁</a></li>|
 						<li><a href="#">한국어 ⋁</a></li>
 					</ul>
-					<ul class="m_bottom">
+					<ul class="a_m_bottom">
 						<li><a href="#">호텔이젠 소개</a></li>
 						<li><a href="../rooms/rooms.html">객실 소개</a></li>
 						<li><a href="#">예약하기</a></li>
