@@ -23,10 +23,14 @@
 	text-decoration: none;
 	border: 1px solid white;
 	margin: 64px 0px 0px 0px;
-	width: 216px; height: 46px;
 	background-color: #81725F;
 	color: #FFFFFF;
 	font-weight: bold;
 	text-align: right;
 	font-family: 'Happiness-Sans-Regular';
+	text-align: center;
 	}
+.D_img_center{
+	display: flex;
+	justify-content: center;
+}
