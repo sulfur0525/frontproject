@@ -1,13 +1,28 @@
 @charset "UTF-8";
-
-
+	
+@font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+   font-family: 'Happiness-Sans-Regular';
+    src:url("/hotel_booking/font/Happiness-Sans-Regular.woff");
+}
+/*------------------------------------------------------------*/
 
 .c_wrap{
 	margin-top: 30px;
 	margin-bottom: 30px;
 	width: 1200px;
-	border: 1px solid black;
-	
+	border: 1px solid #F1E3C4;
 }
 
 .c_mainbox{display: flex; }
@@ -16,7 +31,7 @@
 .c_left_box{width: 80%;}
 
 .c_selectbox{width: 20%; padding: 20px; border-left: 3px solid black;}
-.c_info_imagebox{width: 45%; padding: 20px; border-right: 2px solid black;}
+.c_info_imagebox{width: 45%; padding: 20px; border-right: 2px solid #F1E3C4;}
 .c_roomInfo{
 	width: 50%;
 	margin: 20px;
@@ -28,32 +43,24 @@
 	width: 20%;
 	}
 .c_booking_info{
-	height: 300px; 
+	text-align: center;
 	border: 1px solid black;
 }
 .c_booking_info, .c_date{
 	display: flex;
 	justify-content: space-between;
 }
-.c_adult,.c_child{
-	display: flex;
-	justify-content: flex-start;
-}
 .c_member{margin: 10px; border: 1px solid black; text-align: center;}
 .c_roomoption{
 	border: 1px solid black;
 	margin: 0 auto;
-	display: none;
 	text-align: right;
 }
 .c_calimgbox{width: 25px; height: 25px;}
 .c_calimg{width: 100%; height: 100%;}
-.memberValue{
-	width: 15%;
-	margin: 10px;
-}
-.c_memberselectbtn span{
-	margin: 10px;
+.moonimg{width: 20px; height: 20px;}
+.c_memberselectbtn button{
+	width: 20px;
 	vertical-align: middle;
 }
 .c_select_room{
@@ -92,6 +99,8 @@
 .c_lastdayBot, .c_startdayBot{
 	display: flex;
 	flex-wrap: wrap;
+	width: 100%;
+	margin: 10px;
 }
 .c_modal_box{display: flex; margin: 10px;}
 .c_info_image{width: 100%; height: 100%; padding: 10px;}
@@ -103,8 +112,45 @@
 }
 
 
+.c_datecheck{
+	width: 30%;
+	display: flex;
+	margin-top: 10px;
+	padding: 10px;
+	justify-content: space-between;
+}
+.c_memberselectbtn button{
+	border: 1px solid #eeeeee;
+	background-color: #F1E3C4;
+}
 
+.bookingbtn{
+	border-radius: 10%;
+	margin-top: 10px;
+	width: 100px;
+	height: 70px;
+	background-color: #F1E3C4;
+	border: 1px solid #eeeeee;
+}
+.c_modal_box button{
+	border-radius: 10%;
+	width: 30px;
+	height: 30px;
+	background-color: #F1E3C4;
+	border: 1px solid #eeeeee;
+	margin: 10%;
+}
+.c_modal_btns button{
+	border-radius: 10%;
+	background-color: #F1E3C4;
+	border: 1px solid #eeeeee;
+}
+.c_adult, .c_child{ 
+	margin-top: 10px;
+	padding: 10px;}
 
-
-
-
+.c_modal_box2{
+	margin-left: 30px;
+	padding-left: 30px;
+	border-left: 1px dotted #eeeeee;
+}

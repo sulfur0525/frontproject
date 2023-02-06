@@ -11,153 +11,61 @@
 </head>
 <body>
 	<div class="wrap">
-		<div class="header"> <!-- 해더 -->
-			<div class="h_wrap">
-				<div class="btn"> <!-- 버튼 구역 -->
-					<button class="hotellsearch" style="height: 50px" type="button">호텔찾기<img style="width: 20px" src="../img/index/search.png"></button>
-					<button class="dining" style="height: 50px" type="button">예약<img style="width: 15px" src="../img/index/calendar.png"></button>
-				</div>
-				
-				<div class="logobox"><!-- logo -->
-					<a href="#">THE EZEN<br/> Hotels & Resort</a>
-				</div>
-				
-				<div class="menu"> <!-- 메뉴바 -->
-					<ul class="m_top">
-						<li><a href="#">로그인</a></li>|
-						<li><a href="#">이젠리워즈 가입</a></li>|
-						<li><a href="#">예약확인 ⋁</a></li>|
-						<li><a href="#">한국어 ⋁</a></li>
-					</ul>
-					<ul class="m_bottom">
-						<li><a href="#">호텔이젠 소개</a></li>
-						<li><a href="#">객실 소개</a></li>
-						<li><a href="#">예약하기</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
 		<div class="c_wrap">	<!-- 본문 전체 틀 -->
-			<div class="c_mainbox">
-				<div class="c_left_box">	<!-- 왼쪽 박스 s -->
-					<div class="c_booking_info">	<!-- 예약 정보 s -->
-						<div class="c_info_imagebox"><!-- 객실 이미지 s -->
-						</div> <!-- 객실 이미지 e -->
-						<div class="c_roomInfo">	<!-- 날짜, 인원, 객실 이름 -->
-							<div class="c_date">	<!-- 날짜 -->
-								<div class="c_dateseletbox">
-									<div class="c_firstday">오늘날짜</div>
-									<div>~</div>
-									<div class="c_lastday">다음날짜</div>
-									<div class="c_calimgbox" onclick="click_cal()"><img class="c_calimg" src="../img/booking/calender.png"></div>
-								</div>
-							</div>	<!-- 날짜 e -->
-							<div class="c_member">	<!-- 인원 -->
-									<div class="c_adult">
-										<div class="memberValue">성인</div>
-										<div class="c_memberselectbtn">
-											<span><button onclick="prevbtn(1)"> - </button></span>
-											<span class="c_adultno">0</span>
-											<span><button onclick="plusbtn(1)"> + </button></span>
-										</div>
-									</div>
-									<div class="c_child"> 
-										<div class="memberValue">어린이</div>
-										<div class="c_memberselectbtn">
-											<span><button onclick="prevbtn(2)"> - </button></span>
-											<span class="c_childno">0</span>
-											<span><button onclick="plusbtn(2)"> + </button></span>
-										</div>
-									</div>
-							</div>	<!-- 인원 e-->
-							<div class="c_selectroomzone">
-								<select class="c_select_room" onchange="print_room(value)">
-									<option value="슈페리어">슈페리어</option>
-									<option value="슈페리어 디럭스">슈페리어 디럭스</option>
-									<option value="주니어 스위트 쿼드">주니어 스위트 쿼드</option>
-									<option value="주니어 스위트 킹">주니어 스위트 킹</option>
-									<option value="주니어 스위트 트윈">주니어 스위트 트윈</option>
-								</select>	<!-- 객실 이름 e-->
-							</div>
-							<button onclick="option_select()">상품타입 선택</button>
-						</div> <!-- 날짜, 인원, 객실 이름 -->
-					</div> <!-- 예약 정보 e -->
-					<div class="c_roomoption"> <!-- 객실 옵션 s -->
-						<div class="c_selectinfo">
-						</div>
-						<button onclick="selectlistbtn()">장바구니</button>
-					</div> <!-- 객실 옵션  e-->
-				</div> <!-- 왼쪽 박스 e -->
-				<div class="c_selectbox">	<!-- 장바구니 -->
-					<h3>장바구니</h3>
-					<div class="c_selectListAll">
-					</div>
-					<button>예약하기</button>
-				</div>
-			</div>	<!-- topbox e -->
-		</div> <!-- 본문 전체 틀 e -->
-		<div class="footer"> <!-- 푸터 -->
-				
-				<div class="ft_wrap">
-					<div class="ft_top"> <!-- 상단 푸터 -->
-						<div class="logobox2"><!-- logo -->
-							<a href="#">THE EZEN<br/> Hotels & Resort</a>
-						</div>
-						<div class="ft_inner">
-							<div class="top_inner">
-								<a>THE EZEN</a>
-								<a>EZEN MONOGRAM</a>
-								<a>EZEN STAY</a>
-							</div>
-							<div class="bottom_inner">
-								<ul class="bi_1">
-									<li>서울이젠호텔 02-2233-3131</li>
-									<li>제주이젠호텔 064-735-5114</li>
-									<li>이젠스테이	  02-2230-0700</li>
-									<li>이젠리워즈  02-2230-5528</li>
-								</ul>
-								<ul class="bi_2">
-									<li><a href="#">호텔이젠소개</a></li> |
-									<li><a href="#">고객문의</a></li> |
-									<li><a href="#">사이트맵</a></li> |
-									<li><a href="#">The Ezen shop</a></li> |
-									<li><a href="#">삼성상품권</a></li>
-								</ul>
-								<div>
-									<h4>SNS</h4>
-									<img style="height: 25px" src="../img/index/facebook.png">
-									<img style="height: 25px" src="../img/index/instagram.png">
-									<img style="height: 25px" src="../img/index/kakao-talk.png">
-								</div>
-							</div>
-							
-						</div>
+			<div class="c_booking_info">	<!-- 예약 정보 s -->
+				<div>
+					<div>객실선택</div>
+					<div class="c_selectroomzone">
+						<select class="c_select_room" onchange="print_room(value)">
+							<option value="슈페리어">슈페리어</option>
+							<option value="슈페리어 디럭스">슈페리어 디럭스</option>
+							<option value="주니어 스위트 쿼드">주니어 스위트 쿼드</option>
+							<option value="주니어 스위트 킹">주니어 스위트 킹</option>
+							<option value="주니어 스위트 트윈">주니어 스위트 트윈</option>
+						</select>	<!-- 객실 이름 e-->
 					</div>
 				</div>
-				<div class="ft_bottom"><!-- 하단 푸터-->
+				<div class="c_datecheck">
 					<div>
-						<ul >
-							<li><a href="#">이젠리워즈 약관</a></li> |
-							<li><a href="#">개인정보처리방침</a></li> |
-							<li><a href="#">이메일무단수집금지</a></li> |
-							<li><a href="#">윤리경영(부정제보)</a></li> |
-							<li><a href="#">건축/시설물 안전관리</a></li> 
-						</ul>
+						체크인
+						<div class="c_firstday"></div>
 					</div>
-					<ul>
-						<li>(주) 호텔이젠 서울특별시 중구 동호로 249 (우 : 04605)</li>
-						<li>대표이사 누구누구</li>
-						<li>사업자등록번호 123-45-678912</li>
-						<li>통신판매신고번호 중구00123호</li>
-						<li class="bbox"><a href="#">사업자정보확인 ></a></li>
-						<li>호스팅서비스제공자 삼성SDS(주)</li>
-						<li>서울객실예약 ezen.reserve@samsung.com</li>
-						<li>제주객실예약 jeju.ezen@samsung.com</li>
-					</ul>
-					<span>COPYRIGHT © HOTEL SHILLA CO., LTD. ALL RIGHTS RESERVED.</span>
+					<div>
+						<img class="moonimg" src="../img/booking/moon.png">
+						<div class="c_bookingdate"></div>
+					</div>
+					<div>
+						체크아웃
+						<div class="c_lastday"></div>
+					</div>
+					<div class="c_dateseletbox">
+						<div class="c_calimgbox" onclick="click_cal()">
+						<img class="c_calimg" src="../img/booking/calender.png"></div>
+					</div>					
 				</div>
-		
-		</div>
+				<div>
+					<div class="c_adult">
+						<div class="memberValue">성인</div>
+						<div class="c_memberselectbtn">
+							<span><button onclick="prevbtn(1)"> - </button></span>
+							<span class="c_adultno">0</span>
+							<span><button onclick="plusbtn(1)"> + </button></span>
+						</div>
+					</div>
+				</div>
+				<div class="c_child"> 
+					<div class="memberValue">어린이</div>
+					<div class="c_memberselectbtn">
+						<span><button onclick="prevbtn(2)"> - </button></span>
+						<span class="c_childno">0</span>
+						<span><button onclick="plusbtn(2)"> + </button></span>
+					</div>
+				</div>
+				<div>
+					<a href="checking.html"><button class="bookingbtn">예약</button></a>
+				</div>
+			</div> <!-- 왼쪽 박스 e -->
+		</div> <!-- 본문 e -->
 		
 		<div class="c_modal_wrap">	<!-- 달력 :  모달 -->
 				<div class="c_calenderWrap">
@@ -182,12 +90,13 @@
 						</div> <!-- 모달 상자1 e -->
 					</div>
 					<div class="c_modal_btns">	<!-- 버튼 목록 -->
-							<span class="c_bookingdate">숙박일수</span>
+							<span class="c_bookingdate2">숙박일수</span>
 							<span><button onclick="c_modal_write()" type="button">날짜 선택</button></span>
 							<span><button onclick="c_modal_close()" type="button">닫기</button></span>
 					</div> <!-- 버튼 목록 e -->
 				</div>
 		</div> <!-- 달력 :  모달 e -->
+		
 	</div>
 	
 	<script src="../js/booking/booking.js" type="text/javascript"></script>
