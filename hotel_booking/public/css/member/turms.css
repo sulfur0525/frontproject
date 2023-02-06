@@ -1,4 +1,4 @@
-@charset "EUC-KR";
+@charset "UTF-8";
 
 .b_turms input{
 	margin-left:40px;
@@ -9,7 +9,7 @@
 .b_turms1{
 	border:1px solid gray;
 	width:90%; height: 130px; 
-	overflow: scroll;  font-family: "¸¼Àº°íµñ";
+	overflow: scroll;  font-family: "ë§‘ì€ê³ ë”•";
 	font-size: 10px; padding : 10px 10px;
 }
 .b_turmsbtn{
