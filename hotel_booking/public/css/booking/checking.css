@@ -7,5 +7,16 @@
 .checkingbox{
 	display: none;
 }
-.c_wrap div{margin: 5%;}
+.c_wrap div{margin: 3% 1%;}
 .c_wrap{margin: 5%;}
+
+.c_checkinfo{
+	display: flex;
+}
+.checkbox{ 
+	width: 10%;
+}
+
+.c_checkinfo{
+	width: 100%;
+}

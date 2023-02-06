@@ -6,10 +6,10 @@ let booking = [
 	{no: '9012', room: '주니어 스위트 킹', firstyear: 2023, firstmouth : 2, firstdate: 16, lastyear: 2023, lastmouth: 2, lastdate: 19, price: 350000},
 ]
 
+checkingbtn()
 
 function checkingbtn(){
-	let inputno = document.querySelector('.c_checkingNo').value
-	document.querySelector('.checkingbox').style.display = 'block'
+	let inputno = 1234
 	for(let i=0;i<booking.length;i++){
 		if(booking[i].no==inputno){
 			document.querySelector('.c_resultbox').innerHTML = `<h2>예약하신 정보</h2>`
