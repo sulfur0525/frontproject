@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.F_main_content{ margin-bottom: 100px !important;}
+.F_main_content img{ margin-top: 25px; }
+.F_hotel_guide img{ align-items: center;}
+.F_mainwrite{ border-bottom: 5px solid black;}
+.F_sidebar_menu li{ margin: 5px 0px; }
+.D_sidebar{ width: 240px; height: 280px !important;}
