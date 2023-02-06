@@ -91,15 +91,15 @@
 	background-color: #eeeeee;
 }
 
-.e_col1,.e_typehe1{background-color: red;}
+.e_col1,.e_typehe1{background-color: rgb(255, 151, 151);}
 
-.e_col2,.e_typehe2{background-color: orange;}
+.e_col2,.e_typehe2{background-color: rgb(255, 210, 128);}
 
-.e_col3,.e_typehe3{background-color: yellow;}
+.e_col3,.e_typehe3{background-color: rgb(255, 255, 142);}
 
-.e_col4,.e_typehe4{background-color: green;}
+.e_col4,.e_typehe4{background-color: rgb(164, 255, 164);}
 
-.e_col5,.e_typehe1{background-color: blue;}
+.e_col5,.e_typehe1{background-color: rgb(172, 172, 255);}
 
 
 
