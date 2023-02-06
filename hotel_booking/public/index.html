@@ -9,12 +9,13 @@
 </head>
 <body>
 	
+	<div class="wrap"> <!-- 전체 구역 -->
+	
 		<div class="header"> <!-- 해더 -->
-			
 			<div class="h_wrap">
 				<div class="btn"> <!-- 버튼 구역 -->
-					<button class="hotellsearch" style="height: 50px" type="button">호텔찾기<img style="width: 20px" src="img/index/search.png"></button>
-					<button class="dining" style="height: 50px" type="button">예약<img style="width: 15px" src="img/index/calendar.png"></button>
+					<button class="hotellsearch" style="height: 50px" type="button">호텔찾기<img style="width: 20px" src="img/index/icon/search.png"></button>
+					<button class="dining" style="height: 50px" type="button">예약<img style="width: 15px" src="img/index/icon/calendar.png"></button>
 				</div>
 				
 				<div class="logobox"><!-- logo -->
@@ -35,35 +36,106 @@
 					</ul>
 				</div>
 			</div>
+			
+		</div> <!-- 해더 끝 -->
+		
+		<div class="modal_wrap"> <!-- 모달 상자 -->
+				<!-- js 들어오는 구역 -->
 		</div>
-		<div class="modal_wrap"> <!--  다이닝 버튼 모달 구역 -->
-			<div class="modal_box"> <!-- 모달 상자 -->
-				<div class="mb_top">
-					<h3>예약</h3>
-					<img class="close" src="img/index/Closeicon.png">
-	</div>
+		
+		<div class="main_img"> <!-- 메인 이미지 -->
+			<div class="banner_wrap"> 
+				<div class="banner"> <!-- 이미지 -->
+					<div class="banner_img">
+						<img src="img/index/main3.jpeg">
+						<img src="img/index/main2.jpeg">
+						<img src="img/index/main1.jpeg">
+						<img src="img/index/main0.jpeg">
+					</div>
 				</div>
-				<div class="mb_bottom">
-					<a href="#">
-					<img style="height: 25px" src="img/index/bed.png"></br>
-					객실예약
-					</a>
-					<a href="#">
-					<img style="height: 25px" src="img/index/spoon-and-fork.png"></br>
-					다이닝예약
-					</a>
+				<div class="banner_btn"> <!-- 버튼 -->
+					<span class="prev"> < </span>
+					<span class="next"> > </span>
 				</div>
 			</div>
-		</div>
-		
-		
-		<div class="banner"> <!-- 배너 -->
-			<img alt="" src="img/index/banner1.jpeg">
-		</div>
+		</div> <!-- 메인 이미지 끝 -->
 	
 		
-		<div class="content"> <!-- 본문 -->
-		</div>
+		<div> <!-- 본문 -->
+			<div class="main_content"> <!-- 메인 콘텐츠 -->
+				<div class="content_top">
+					<h3>스페셜 오퍼</h3>
+					<span>
+						<h6>SPECAIL OFFERS</h6>
+						<img src="img/index/icon/add.gif">
+					</span>
+				</div>
+				<div class="content_bottom">
+					<div>
+						<img src="img/index/shilla.jpeg">
+						<span>
+							<img src="img/index/wine.jpeg">
+							<img src="img/index/danang.jpeg">
+						</span>
+					</div>
+					<div >
+						<img src="img/index/jeju.jpeg">
+						<img src="img/index/stay.jpeg">
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="sub_content"> <!-- 서브 콘텐츠 -->
+				<div class="content_top">
+					<h3>이젠리워즈</h3>
+					<h6>MEMBERSHIP</h6>
+				</div>
+				<div class="Scontent_bottom">
+					<div class="Scontent_img">
+						<img src="img/index/회원전용.gif">
+						<img src="img/index/신라리워즈 특전.gif">
+						<img src="img/index/포인트.gif">
+						<span>
+							<p>이젠 리워즈는 서울•제주이젠호텔, 이젠모그램, 이젠스테이 및 특전을 제공하는 통합멤버십 서비스입니다.
+							 지금 가입하시고 회원만을 위한 특별한 서비스와 다양한 혜택을 받으십시오.</p>
+							<a href="#">자세히 보기 ></a>
+						</span>
+					</div>
+					<img src="img/index/신라리워즈.png">
+				</div>
+			</div>
+			
+			<div class="search_wrap"> <!-- 구독 검색 -->
+				<div class="search">
+					<div class="search_top">
+						<h3>뉴스레터 구독 신청</h3>
+						<h6>NEWLETTER</h6>
+					</div>
+					
+					<div class="emailbox">
+						<div class="address_input">
+							<input class="input" type="text" placeholder="이메일주소를 입력해주세요.">
+							<span>@</span>
+							<input class="input1" type="text">
+						</div>
+						<div class="select" >
+							<select>
+								<option>직접입력</option><option>naver.com</option><option>hanmail.net</option>
+								<option>hotmail.com</option><option>nate.com</option><option>yahoo.co.kr</option>
+								<option>empas.com</option><option>dreamwiz.com</option><option>freechal.com</option>
+								<option>lycos.co.kr</option><option>korea.com</option><option>gmail.com</option>
+								<option>hanmir.com</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="join">신청</div>
+				</div>
+				<span class="newsD">뉴스레터 구독 취소를 원하신다면 <a href="#">여기</a>를 클릭해 주십시오.</span>
+			</div>
+			
+		</div><!-- 본문 끝 -->
 	
 		<div class="footer"> <!-- 푸터 -->
 			
@@ -94,9 +166,9 @@
 							</ul>
 							<div>
 								<h4>SNS</h4>
-								<img style="height: 25px" src="img/index/facebook.png">
-								<img style="height: 25px" src="img/index/instagram.png">
-								<img style="height: 25px" src="img/index/kakao-talk.png">
+								<img style="height: 25px" src="img/index/icon/facebook.png">
+								<img style="height: 25px" src="img/index/icon/instagram.png">
+								<img style="height: 25px" src="img/index/icon/kakao-talk.png">
 							</div>
 						</div>
 						
@@ -129,7 +201,6 @@
 		</div> <!-- 푸터 끝 -->
 		
 	</div> <!-- 전체 구역 끝 -->
-		</div>
 
 
 
