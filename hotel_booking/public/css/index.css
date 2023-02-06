@@ -65,7 +65,7 @@ a{ color: #555; text-decoration: none; }
 .a_modal2_box td:hover{ background-color: rgba( 255 , 248 , 225 , 0.5); }
 
 /* 로고 */
-.a_logobox{ font-size: 25px; font-family: 'Happiness-Sans-Title !important'; text-align: center; margin-top: 20px; color: #3E3831; }
+.a_logobox{ font-size: 25px; text-align: center; margin-top: 20px; color: #3E3831; }
 
 /*-----------------------------------*/
 .a_main_img{ display: flex; justify-content: center; text-align: center; overflow: hidden;}
@@ -111,7 +111,7 @@ a{ color: #555; text-decoration: none; }
 /* 상단 푸터 */
 .a_ft_wrap{ background-color: #EEDCB7; }
 .a_ft_top{ display: flex; width: 1200px; align-items: center; }
-.a_logobox2{ margin: 30px 10px;; width: 30%; font-size: 22px; font-family: 'Happiness-Sans-Title !important'; text-align: center; color: #3E3831; }
+.a_logobox2{ margin: 30px 10px;; width: 30%; font-size: 22px; font-family:'Happiness-Sans-Title'; text-align: center; color: #3E3831; }
 .a_top_inner { font-size: 20px; margin: 15px 0px;}
 .a_top_inner a{ margin-right: 20px;}
 .a_bottom_inner{ display: flex; margin: 20px 15px 20px 0px; font-size: 15px; color: #897B64; }
