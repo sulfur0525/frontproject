@@ -22,7 +22,7 @@
 li{ list-style-type: none; }
 a{ color: #555; text-decoration: none; }
 /*----------------------------------------------*/
-.header{ background-color: #EEDCB7; }
+.header{ background-color: #EEDCB7;}
 .h_wrap{ width: 1200px; height: 90px; display: flex; position: relative; }
 
 /* 메뉴 */
