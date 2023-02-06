@@ -14,9 +14,6 @@
 	display: flex;
 }
 .checkbox{ 
-	width: 10%;
+	width: 15%;
 }
-
-.c_checkinfo{
-	width: 100%;
-}
+.c_priceinfo{width: 33%; }
