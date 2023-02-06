@@ -126,7 +126,7 @@ function navbox_print(){
 									<a href="admin_realtime.html"><img alt="" src="../img/admin/nav_07.png">실시간 객실 상태</a>
 								</li>
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a href="#"><img alt="" src="../img/admin/nav_07.png">객실 현황표</a>
+									<a href="#"><img alt="" src="../img/admin/nav_07.png">객실 현황표(x)</a>
 								</li>
 							</ul>
 						</li>
@@ -143,7 +143,7 @@ function navbox_print(){
 									<a href="admin_roomstock.html"><img alt="" src="../img/admin/nav_07.png">객실 재고 조회</a>
 								</li>
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a><img alt="" src="../img/admin/nav_07.png">매출/입금 조회</a>
+									<a><img alt="" src="../img/admin/nav_07.png">매출/입금 조회(x)</a>
 								</li>
 							</ul>
 						</li>
@@ -154,7 +154,7 @@ function navbox_print(){
 							
 							<ul class="e_sub_menus e_sub3"><!-- 서브아이템 모음 -->
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a><img alt="" src="../img/admin/nav_07.png">회원정보 조회</a>
+									<a><img alt="" src="../img/admin/nav_07.png">회원정보 조회(x)</a>
 								</li>
 							</ul>
 						</li>
@@ -165,13 +165,13 @@ function navbox_print(){
 							
 							<ul class="e_sub_menus e_sub4"><!-- 서브아이템 모음 -->
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a><img alt="" src="../img/admin/nav_07.png">객실사용 통계</a>
+									<a><img alt="" src="../img/admin/nav_07.png">객실사용 통계(x)</a>
 								</li>
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a><img alt="" src="../img/admin/nav_07.png">매출 통계</a>
+									<a><img alt="" src="../img/admin/nav_07.png">매출 통계(x)</a>
 								</li>
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a><img alt="" src="../img/admin/nav_07.png">회원 통계</a>
+									<a><img alt="" src="../img/admin/nav_07.png">회원 통계(x)</a>
 								</li>
 							</ul>
 						</li>
@@ -181,10 +181,7 @@ function navbox_print(){
 							
 							<ul class="e_sub_menus e_sub5"><!-- 서브아이템 모음 -->
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a><img alt="" src="../img/admin/nav_07.png">객실요금 설정</a>
-								</li>
-								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a><img alt="" src="../img/admin/nav_07.png">객실타입 설정</a>
+									<a href="admin_roomtype.html"><img alt="" src="../img/admin/nav_07.png">객실설정</a>
 								</li>
 							</ul>
 						</li>

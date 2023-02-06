@@ -64,6 +64,10 @@
 	border-right: 1px solid #ccc;
 }
 
+.e_t_type{
+	overflow: hidden !important;
+}
+
 .e_item_con{
 	height: 115px;
 	display: flex;

@@ -25,7 +25,7 @@ function room_list(){
 						html +=`<li class="e_list_item"><!-- 사용중인 객실 -->
 						<ul class="e_item_title">
 							<li class="e_t_ho">${o.호수}</li>
-							<li>${o.객실타입}</li>
+							<li class="e_t_type">${o.객실타입}</li>
 						</ul>
 						<div class="e_item_con">
 							<span><img alt="" src="../img/admin/r_state02.png"></span>
@@ -38,7 +38,7 @@ function room_list(){
 			html += `<li class="e_list_item"><!-- 예약중인 객실 -->
 						<ul class="e_item_title">
 							<li class="e_t_ho">${o.호수}</li>
-							<li>${o.객실타입}</li>
+							<li class="e_t_type">${o.객실타입}</li>
 						</ul>
 						<div class="e_item_con">
 							<span><img alt="" src="../img/admin/r_state01.png"></span>
@@ -52,7 +52,7 @@ function room_list(){
 			html += `<li class="e_list_item"><!-- 공실 -->
 						<ul class="e_item_title">
 							<li class="e_t_ho">${o.호수}</li>
-							<li>${o.객실타입}</li>
+							<li class="e_t_type">${o.객실타입}</li>
 						</ul>
 						<div class="e_item_con">
 							<span><img alt="" src="../img/admin/r_state03.png"></span>

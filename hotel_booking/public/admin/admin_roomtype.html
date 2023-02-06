@@ -8,7 +8,7 @@
 	
 	<!-- 사용자정의 : css -->
 	<link href="../css/admin/admin.css" rel="stylesheet">
-	<link href="../css/admin/admin_bookinglist.css" rel="stylesheet">
+	<link href="../css/admin/admin_roomtype.css" rel="stylesheet">
 	<link href="../css/index.css" rel="stylesheet">
 
 	
@@ -29,21 +29,25 @@
 			<div class="e_contents">
 			<div class="e_con_title">
 				<div class="e_wide"><img alt="" src="../img/admin/left.png"></div>
-				<div class="e_title_name">객실/예약 조회</div>
+				<div class="e_title_name">객실설정</div>
 			</div>
-			<div class="e_booking_list">
-				<table class="e_list_table">
-				<tr><th></th></tr>
+			<div class="e_room_type">
+				<table class="e_r_type_table">
 				</table>
-			</div>
-			
-			<div class="booking_modal">
-				<table class="modal_table">					
-				</table>
+				<div class="e_room_add">
+					<button class="e_radd" onclick="e_roadd()" type="button">등록</button>
+				</div>
+				
+				<div class="e_add_modal">
+					<table class="e_add_table"></table>
+				</div>
+				
+				<div class="e_ch_modal">
+					<table class="e_ch_table"></table>
+				</div>
 			</div>
 		</div>
 		</div>
-		
 		<!-- footer -->
 		<div class="footer"> <!-- 푸터 -->
 		</div>
@@ -52,7 +56,6 @@
 	<!-- 사용자정의 js-->
 	<script type="text/javascript" src="../js/admin/db.js"></script>
 	<script type="text/javascript" src="../js/admin/admin.js"></script>
-	<script type="text/javascript" src="../js/admin/admin_home.js"></script>
-	<script type="text/javascript" src="../js/admin/admin_bookinglist.js"></script>
+	<script type="text/javascript" src="../js/admin/admin_roontype.js"></script>
 </body>
 </html>

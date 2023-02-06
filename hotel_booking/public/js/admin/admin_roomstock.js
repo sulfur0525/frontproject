@@ -20,7 +20,7 @@ function stock_print(){
 					</thead>
 					<tbody>`
 	
-	for(let j = 0 ; j<4 ; j++){				
+	for(let j = 0 ; j<3 ; j++){				
 		let date = date_formet(new Date(year,month-1 ,(day+j)));
 		
 		for(let i = 1 ; i<6 ; i++){

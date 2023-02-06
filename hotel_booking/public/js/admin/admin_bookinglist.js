@@ -70,20 +70,20 @@ function bo_modal(i){
 							<th id="roomtype" colspan="6">${booking[i].호수} ${booking[i].객실타입}</th>
 						</tr>
 						<tr>
-							<th width="10%">고객명 :</th> 
-							<td width="23%">${booking[i].고객명}</td>
-							<th width="10%">입실일자 :</th> 
-							<td width="23%">${booking[i].입실날짜}</td>
-							<th width="10%">연락처 :</th> 
-							<td width="23%">${booking[i].전화번호}</td>
+							<th width="10%">고객명 </th> 
+							<td width="23%"><input type="text" placeholder="${booking[i].고객명}"></td>
+							<th width="10%">입실일자 </th> 
+							<td width="23%"><input type="text" placeholder="${booking[i].입실날짜}"></td>
+							<th width="10%">연락처 </th> 
+							<td width="23%"><input type="text" placeholder="${booking[i].전화번호}"></td>
 						</tr>
 						<tr>
-							<th width="10%">인원 :</th> 
-							<td width="23%">2</td>
-							<th width="10%">비고 :</th> 
-							<td width="23%">${booking[i].요청사항}</td>
-							<th width="10%">총 요금 :</th> 
-							<td width="23%">${요금*booking[i].숙박일수}</td>
+							<th width="10%">인원 </th> 
+							<td width="23%"><input type="text" placeholder="2"></td>
+							<th width="10%">비고 </th> 
+							<td width="23%"><input type="text" placeholder="${booking[i].요청사항}"></td>
+							<th width="10%">총 요금 </th> 
+							<td width="23%"><input type="text" placeholder="${요금*booking[i].숙박일수}"></td>
 						</tr>
 					</tbody>`
 					

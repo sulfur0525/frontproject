@@ -74,10 +74,10 @@
 }
 
 .modal_table{
-	border: 1px solid black;
+	
 	border-collapse : collapse;
 	width: 100%;
-	height: 100%;
+	height: 130px;
 }
 
 .modal_table thead th{
@@ -90,13 +90,14 @@
 
 .modal_table tbody th{
 	padding: 5px 0;
-	padding-bottom : 20px;
+	padding-bottom : 10px;
 	text-align: right;
+	padding-right: 10px;
 }
 
 .modal_table tbody td{
 	padding: 5px 0;
-	padding-bottom : 20px;
+	padding-bottom : 10px;
 	text-align: left;
 	
 }

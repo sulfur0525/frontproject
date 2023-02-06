@@ -55,10 +55,10 @@
 	text-align: center;
 }
 
-.date{font-size: 12px;}
+.date{font-size: 12px;font-family: 'Happiness-Sans-Title';}
 
-.share{font-size: 17px; margin-left: 10px;}
-.percent{color: red;font-size: 17px;margin-left: 10px;}
+.share{font-size: 17px; margin-left: 10px;font-family: 'Happiness-Sans-Title';}
+.percent{color: red;font-size: 17px;margin-left: 10px;font-family: 'Happiness-Sans-Title';}
 
 .roomcnt th, .roomcnt td{
 	border: 1px solid black;
@@ -67,6 +67,7 @@
 .roomcnt td{background-color: white;}
 .roomcnt th{
 	background-color: #D3C09A;
+	font-size: 12px;
 }
 /* --------------------------------- */
 .con_con2{

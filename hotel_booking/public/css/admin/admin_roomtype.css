@@ -1,0 +1,154 @@
+@charset "UTF-8";
+.e_sub5{
+	display: block;
+}
+
+.e_contents{
+	width: 890px;	
+}
+
+.e_con_title{
+	display: flex;
+	padding: 0 10px;
+	height: 54px;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.e_wide{margin: 0px; padding-right: 10px;}
+.e_title_name{margin: 0px;}
+.e_on_title img{
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+.e_title_name{
+	font-size: 20px;
+	padding-left: 10px;
+	height :54px;
+	line-height: 54px;
+	border-left: 1px solid #ccc;
+}
+
+.e_r_type_table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin : 30px; 
+	width: 850px;
+}
+
+.e_r_type_table th{
+	background-color: #D3C09A;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.e_r_type_table td{
+	border: 1px solid black;
+	padding: 5px; 
+	text-align: center;
+}
+
+.e_r_type_table button{
+	padding: 5px; 
+}
+
+/* ------------------------------------- */
+.e_ad_wrap{position: relative;}
+.e_ch_modal{
+	border : 1px solid black;
+	position: absolute;
+	left: 320px;
+	top: 10%;
+	background-color: white;
+	width: 890px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.e_ch_modal td{
+	padding: 5px;
+	font-size: 18px !important;
+}
+
+.e_ch_modal td input{
+	text-align: center;
+	font-size: 16px;
+	padding: 3px;
+}
+
+.e_ch_modal td button{
+	padding: 5px;
+}
+
+/*-----------------------------------*/
+
+.e_room_add{
+	width: 100%;
+	text-align: right;
+}
+.e_radd{
+	padding: 5px 30px;
+	margin-right: 20px;
+}
+
+/*------------------------------------*/
+.e_add_modal{
+	border : 1px solid black;
+	position: absolute;
+	left: 320px;
+	top: 10%;
+	background-color: white;
+	width: 890px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.e_add_modal td{
+	padding: 5px;
+	font-size: 18px !important;
+}
+
+.e_add_modal td input{
+	text-align: center;
+	font-size: 16px;
+	padding: 3px;
+}
+
+.e_add_modal td button{
+	padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

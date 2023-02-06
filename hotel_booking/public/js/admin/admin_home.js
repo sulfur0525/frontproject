@@ -8,11 +8,11 @@ function roomcnt(){
 	let html = `<thead>
 					<tr>
 						<th>구분</th>
-						<th>더블</th>
-						<th>디럭스</th>
-						<th>스위트</th>
-						<th>트윈</th>
-						<th>패밀리</th>
+						<th>슈페리어</th>
+						<th>슈페리어 디럭스</th>
+						<th>주니어 스위트 쿼드</th>
+						<th>주니어 스위트 킹</th>
+						<th>주니어 스위트 트윈</th>
 						<th>총 합계</th>
 					</tr>
 				</thead>
@@ -53,11 +53,11 @@ function roomcnt(){
 function type(i){
 	let type=''
 	
-	if(i==1){type='더블'}
-	else if(i==2){type='디럭스'}
-	else if(i==3){type='스위트'}
-	else if(i==4){type='트윈'}
-	else if(i==5){type='패밀리'}
+	if(i==1){type='슈페리어'}
+	else if(i==2){type='슈페리어 디럭스'}
+	else if(i==3){type='주니어 스위트 쿼드'}
+	else if(i==4){type='주니어 스위트 킹'}
+	else if(i==5){type='주니어 스위트 트윈'}
 	
 	return type
 }
@@ -66,11 +66,12 @@ function count(i){
 	let cnt = 0; 
 	let type=''
 	
-	if(i==1){type='더블'}
-	else if(i==2){type='디럭스'}
-	else if(i==3){type='스위트'}
-	else if(i==4){type='트윈'}
-	else if(i==5){type='패밀리'}
+	
+	if(i==1){type='슈페리어'}
+	else if(i==2){type='슈페리어 디럭스'}
+	else if(i==3){type='주니어 스위트 쿼드'}
+	else if(i==4){type='주니어 스위트 킹'}
+	else if(i==5){type='주니어 스위트 트윈'}
 	else{rooms.forEach((o)=>{cnt++})}
 	
 	
@@ -85,11 +86,12 @@ function sale(i){
 	let cnt = 0; 
 	let type=''
 	
-	if(i==1){type='더블'}
-	else if(i==2){type='디럭스'}
-	else if(i==3){type='스위트'}
-	else if(i==4){type='트윈'}
-	else if(i==5){type='패밀리'}
+	
+	if(i==1){type='슈페리어'}
+	else if(i==2){type='슈페리어 디럭스'}
+	else if(i==3){type='주니어 스위트 쿼드'}
+	else if(i==4){type='주니어 스위트 킹'}
+	else if(i==5){type='주니어 스위트 트윈'}
 	else{booking.forEach((o)=>{cnt++})}
 	
 	
@@ -126,11 +128,12 @@ function bargrh(){
 		let cnt =0;
 		let type=''
 	
-		if(i==1){type='더블'}
-		else if(i==2){type='디럭스'}
-		else if(i==3){type='스위트'}
-		else if(i==4){type='트윈'}
-		else{type='패밀리'}
+		
+	if(i==1){type='슈페리어'}
+	else if(i==2){type='슈페리어 디럭스'}
+	else if(i==3){type='주니어 스위트 쿼드'}
+	else if(i==4){type='주니어 스위트 킹'}
+	else{type='주니어 스위트 트윈'}
 		
 		realtime.forEach((o)=>{
 			if(type==o.객실타입){
@@ -143,7 +146,7 @@ function bargrh(){
 	
 	let html = `<thead>
 					<tr>
-						<th>더블</th>	<th>디럭스</th><th>스위트</th><th>트윈</th><th>패밀리</th>
+						<th>슈페리어</th>	<th>슈페리어 디럭스</th><th>주니어 스위트 쿼드</th><th>주니어 스위트 킹</th><th>주니어 스위트 트윈</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -160,11 +163,12 @@ function realtimeprint(i){
 	let cnt = 0; 
 	let type=''
 	
-	if(i==1){type='더블'}
-	else if(i==2){type='디럭스'}
-	else if(i==3){type='스위트'}
-	else if(i==4){type='트윈'}
-	else if(i==5){type='패밀리'}
+	
+	if(i==1){type='슈페리어'}
+	else if(i==2){type='슈페리어 디럭스'}
+	else if(i==3){type='주니어 스위트 쿼드'}
+	else if(i==4){type='주니어 스위트 킹'}
+	else if(i==5){type='주니어 스위트 트윈'}
 	else{realtime.forEach((o)=>{cnt++})}
 	
 	
