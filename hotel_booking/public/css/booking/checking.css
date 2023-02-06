@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.c_checkingNo{
+	width: 300px;
+}
+
+.checkingbox{
+	display: none;
+}
+.c_wrap div{margin: 3% 1%;}
+.c_wrap{margin: 5%;}
+
+.c_checkinfo{
+	display: flex;
+}
+.checkbox{ 
+	width: 15%;
+}
+.c_priceinfo{width: 33%; }
