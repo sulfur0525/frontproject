@@ -1,5 +1,8 @@
 
+
 let member = {id : 'qwer' , pw : 1234}
+
+let admin = {id : 'admin' , pw : 'admin' }
 
 let b_loginbtn = document.querySelector('.b_loginbtn')
 let b_Signupbtn = document.querySelector('.b_Signupbtn')
@@ -16,9 +19,12 @@ function loginbtn(){
 		alert('아이디를 확인 해주세요.');
 		}else if(member.pw != login.pw || login.pw == ""){
 		alert('비밀번호를 확인 해주세요.');
-		}else {alert('로그인 성공')}
+		}else {alert('로그인 성공') }
 
+		if( login.id != admin.id){
+		alert('관리자 아이디를 확인 해주세요.');
+		}else if(login.pw != admin.pw){
+		alert('관리자 비밀번호를 확인 해주세요.');
+		}else {alert('관리자 로그인 성공') ; location.href="../admin/admin_home.html";}
 
 }
-//회원가입 - 가입완료 버튼 클릭 이벤트
-

@@ -1,51 +1,32 @@
-let b_Signupbtn = document.querySelector('.b_Signupbtn')
 
-b_Signupbtn.addEventListener('click',(e)=>{
-	let b_check = document.querySelector('.b_check').value;
-	let b_pwcheck = document.querySelector('.b_pwcheck').value;
-	let b_pwRecheck = document.querySelector('.b_pwRecheck').value;
-	
-	singup = {
-		id : b_check,
-		pw : b_pwcheck		
-	}
-	
-	let check = true;
-	
-	if(b_check == "" && b_pwcheck == "" && b_pwRecheck == ""){
-		alert('필수정보를 확인 해주세요') ; check = false;
-	}else if (b_check == b_loginId){
-		alert('이미 등록 된 아이디입니다.'); check = false;
-	}else if (b_check != b_pwcheck){
-		alert('비밀번호가 다릅니다.'); check = false;
-	}
-	
-	if(check){ member.push(signup) ; alert('회원가입 되었습니다.') }
-	
-})
+let Signupbtn = document.querySelector('.b_Signupbtn')
 
-let b_Signupbtn = document.querySelector('.b_Signupbtn')
+let new_member = []
 
-b_Signupbtn.addEventListener('click',(e)=>{
-	let b_check = document.querySelector('.b_check').value;
-	let b_pwcheck = document.querySelector('.b_pwcheck').value;
-	let b_pwRecheck = document.querySelector('.b_pwRecheck').value;
+
+
+//회원가입 - 가입완료 버튼 클릭 이벤트
+function b_Signupbtn(){
 	
-	singup = {
-		id : b_check,
-		pw : b_pwcheck		
-	}
+	let name = document.querySelector('.b_namecheck').value
+	let birth = document.querySelector('#b_birthcheck').value
+	let phone = document.querySelector('#b_phonecheck').value
+	let idcheck = document.querySelector('.b_idcheck').value
+	let	pwcheck = document.querySelector('#b_pwcheck').value
+	let pw_recheck = document.querySelector('#b_pwRecheck').value
 	
-	let check = true;
+	let signup = { id : idcheck , pw : pwcheck}
+	console.log(signup)
+
 	
-	if(b_check == "" && b_pwcheck == "" && b_pwRecheck == ""){
-		alert('필수정보를 확인 해주세요') ; check = false;
-	}else if (b_check == b_loginId){
-		alert('이미 등록 된 아이디입니다.'); check = false;
-	}else if (b_check != b_pwcheck){
-		alert('비밀번호가 다릅니다.'); check = false;
-	}
+	if(pw_recheck != signup.pw  ){
+		alert('비밀번호가 다릅니다.') ; return;
+	}else if (signup.id == "" || signup.pw == "" || pw_recheck == ""){
+		alert('아이디,비밀번호를 입력 해주세요.') ; return;
+	}else if(name == "" || birth == "" || phone == ""){
+		alert('회원정보를 입력 해주세요.') ; return;
+	}else {alert('회원가입되었습니다.'); location.href="login.html";}		
 	
-	if(check){ member.push(signup) ; alert('회원가입 되었습니다.') }
-	
-})
+
+
+}
