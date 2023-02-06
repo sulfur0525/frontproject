@@ -3,12 +3,12 @@ let 국내 = [ '서울이젠호텔' , '이젠스테이광화문' , '이젠스테
 let 해외 = [ '이젠모노그램 다낭' ]
 
 /* 호텔 찾기 버튼 모달 */
-document.querySelector('.hotellsearch').addEventListener( 'click' , ()=>{
-	let html = `<div class="modal2_box">
-					<div class="mb_top">
+document.querySelector('.a_hotellsearch').addEventListener( 'click' , ()=>{
+	let html = `<div class="a_modal2_box">
+					<div class="a_mb_top">
 						<img onclick="닫기()" src="img/index/icon/Closeicon.png">
 					</div>
-					<div class="mb2_bottom">
+					<div class="a_mb2_bottom">
 					<table>
 						<tr> <th width="100px;" style="vertical-align: top; text-align: left;"> 국내 </th>`
 	for( let i = 0 ; i<국내.length ; i++){
@@ -24,18 +24,18 @@ document.querySelector('.hotellsearch').addEventListener( 'click' , ()=>{
 				</div>
 			</div>`
 	
-	document.querySelector('.modal_wrap').innerHTML = html;
-	document.querySelector('.modal_wrap').style.display = 'flex';
+	document.querySelector('.a_modal_wrap').innerHTML = html;
+	document.querySelector('.a_modal_wrap').style.display = 'flex';
 })
 
 /* 예약 버튼 모달 */
-document.querySelector('.dining').addEventListener( 'click' , ()=>{
-	let html = `<div class="modal_box"> 
-					<div class="mb_top">
+document.querySelector('.a_dining').addEventListener( 'click' , ()=>{
+	let html = `<div class="a_modal_box"> 
+					<div class="a_mb_top">
 						<h3>예약</h3>
 						<img onclick="닫기()" src="img/index/icon/Closeicon.png">
 					</div>
-					<div class="mb_bottom">
+					<div class="a_mb_bottom">
 						<a href="#">
 						<img style="height: 25px" src="img/index/icon/bed.png"></br>
 						객실예약
@@ -47,26 +47,26 @@ document.querySelector('.dining').addEventListener( 'click' , ()=>{
 					</div>
 				</div>`
 	
-	document.querySelector('.modal_wrap').innerHTML = html;
-	document.querySelector('.modal_wrap').style.display = 'flex';
+	document.querySelector('.a_modal_wrap').innerHTML = html;
+	document.querySelector('.a_modal_wrap').style.display = 'flex';
 })
 
 /* 모달 닫기 함수 */
-function 닫기(){ document.querySelector('.modal_wrap').style.display = 'none'; }
+function 닫기(){ document.querySelector('.a_modal_wrap').style.display = 'none'; }
 
 /* 이미지 슬라이드 */
 let move = 0;
 function moving(i){
-	document.querySelector('.banner').style.left = -i*1920+'px';
+	document.querySelector('.a_banner').style.left = -i*1920+'px';
 	move = i;
 }
 
 
-document.querySelector('.next').addEventListener( 'click' , ()=>{
+document.querySelector('.a_next').addEventListener( 'click' , ()=>{
 	if( move < 3 ){	moving(move + 1); }
 	else{ moving(0) };
 })
-document.querySelector('.prev').addEventListener( 'click' , ()=>{
+document.querySelector('.a_prev').addEventListener( 'click' , ()=>{
 	if( move > 0 ){	moving(move - 1); }
 	else{ moving(3) };
 })
