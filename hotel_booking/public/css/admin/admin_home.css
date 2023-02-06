@@ -74,6 +74,7 @@
 	height: 290px;
 	width: 100%;
 	background-color: #f1e3c4;
+	overflow: hidden;
 }
 
 .e_con_subright{

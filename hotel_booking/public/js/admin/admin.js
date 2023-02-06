@@ -4,64 +4,68 @@ header_print()
 footer_print()
 
 function footer_print(){
-	let html = `<div class="ft_wrap">
-					<div class="ft_top"> <!-- 상단 푸터 -->
-						<div class="logobox2"><!-- logo -->
-							<a href="#">THE EZEN<br/> Hotels & Resort</a>
+	let html = `<div class="a_footer"> <!-- 푸터 -->
+			
+			<div class="a_ft_wrap"> <!-- 상단 푸터 -->
+				<div class="a_ft_top"> 
+					<div class="a_logobox2"><!-- logo -->
+						<a href="#">THE EZEN<br/> Hotels & Resort</a>
+					</div>
+					<div class="a_ft_inner">
+						<div class="a_top_inner">
+							<a>THE EZEN</a>
+							<a>EZEN MONOGRAM</a>
+							<a>EZEN STAY</a>
 						</div>
-						<div class="ft_inner">
-							<div class="top_inner">
-								<a>THE EZEN</a>
-								<a>EZEN MONOGRAM</a>
-								<a>EZEN STAY</a>
+						<div class="a_bottom_inner">
+							<ul class="a_bi_1">
+								<li>서울이젠호텔 02-2233-3131</li>
+								<li>제주이젠호텔 064-735-5114</li>
+								<li>이젠스테이	  02-2230-0700</li>
+								<li>이젠리워즈  02-2230-5528</li>
+							</ul>
+							<ul class="a_bi_2">
+								<li><a href="#">호텔이젠소개</a></li> |
+								<li><a href="#">고객문의</a></li> |
+								<li><a href="#">사이트맵</a></li> |
+								<li><a href="#">The Ezen shop</a></li> |
+								<li><a href="#">삼성상품권</a></li>
+							</ul>
+							<div>
+								<h4>SNS</h4>
+								<img style="height: 25px" src="../img/index/icon/facebook.png">
+								<img style="height: 25px" src="../img/index/icon/instagram.png">
+								<img style="height: 25px" src="../img/index/icon/kakao-talk.png">
 							</div>
-							<div class="bottom_inner">
-								<ul class="bi_1">
-									<li>서울이젠호텔 02-2233-3131</li>
-									<li>제주이젠호텔 064-735-5114</li>
-									<li>이젠스테이	  02-2230-0700</li>
-									<li>이젠리워즈  02-2230-5528</li>
-								</ul>
-								<ul class="bi_2">
-									<li><a href="#">호텔이젠소개</a></li> |
-									<li><a href="#">고객문의</a></li> |
-									<li><a href="#">사이트맵</a></li> |
-									<li><a href="#">The Ezen shop</a></li> |
-									<li><a href="#">삼성상품권</a></li>
-								</ul>
-								<div>
-									<h4>SNS</h4>
-									<img style="height: 25px" src="../img/index/facebook.png">
-									<img style="height: 25px" src="../img/index/instagram.png">
-									<img style="height: 25px" src="../img/index/kakao-talk.png">
-								</div>
-							</div>
-							
 						</div>
+						
 					</div>
 				</div>
-				<div class="ft_bottom"><!-- 하단 푸터-->
-					<div>
-						<ul >
-							<li><a href="#">이젠리워즈 약관</a></li> |
-							<li><a href="#">개인정보처리방침</a></li> |
-							<li><a href="#">이메일무단수집금지</a></li> |
-							<li><a href="#">윤리경영(부정제보)</a></li> |
-							<li><a href="#">건축/시설물 안전관리</a></li> 
-						</ul>
-					</div>
-					<ul>
-						<li>(주) 호텔이젠 서울특별시 중구 동호로 249 (우 : 04605)</li>
-						<li>대표이사 누구누구</li>
-						<li>사업자등록번호 123-45-678912</li>
-						<li>통신판매신고번호 중구00123호</li>
-						<li class="bbox"><a href="#">사업자정보확인 ></a></li>
-						<li>호스팅서비스제공자 삼성SDS(주)</li>
-						<li>서울객실예약 ezen.reserve@samsung.com</li>
-						<li>제주객실예약 jeju.ezen@samsung.com</li>
+			</div>
+			<div class="a_ft_bottom"><!-- 하단 푸터-->
+				<div>
+					<ul >
+						<li><a href="#">이젠리워즈 약관</a></li> |
+						<li><a href="#">개인정보처리방침</a></li> |
+						<li><a href="#">이메일무단수집금지</a></li> |
+						<li><a href="#">윤리경영(부정제보)</a></li> |
+						<li><a href="#">건축/시설물 안전관리</a></li> 
 					</ul>
-					<span>COPYRIGHT © HOTEL SHILLA CO., LTD. ALL RIGHTS RESERVED.</span>
-				</div>`
+				</div>
+				<ul>
+					<li>(주) 호텔이젠 서울특별시 중구 동호로 249 (우 : 04605)</li>
+					<li>대표이사 누구누구</li>
+					<li>사업자등록번호 123-45-678912</li>
+					<li>통신판매신고번호 중구00123호</li>
+					<li class="a_bbox"><a href="#">사업자정보확인 ></a></li>
+					<li>호스팅서비스제공자 삼성SDS(주)</li>
+					<li>서울객실예약 ezen.reserve@samsung.com</li>
+					<li>제주객실예약 jeju.ezen@samsung.com</li>
+				</ul>
+				<span>COPYRIGHT © HOTEL SHILLA CO., LTD. ALL RIGHTS RESERVED.</span>
+			</div>
+		
+		</div> <!-- 푸터 끝 -->`
 	
 	document.querySelector('.footer').innerHTML = html
 }
@@ -168,7 +172,7 @@ function navbox_print(){
 							
 							<ul class="e_sub_menus e_sub4"><!-- 서브아이템 모음 -->
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
-									<a href="admin_stats.html"><img alt="" src="../img/admin/nav_07.png">매출 통계</a>
+									<a href="admin_stats.html"><img alt="" src="../img/admin/nav_07.png">예약 통계</a>
 								</li>
 								<li class="e_sub_menu"><!-- 서브아이템 1개 -->
 									<a><img alt="" src="../img/admin/nav_07.png">회원 통계(x)</a>
