@@ -58,3 +58,7 @@
 }
 .c_creditinfobox2{width: 200px; height: 38px;}
 .c_creditselect{width: 200px; height: 40px;}
+.c_info{display: flex;  border-bottom: 1px dotted gray; padding: 10px;	}
+.c_completeinfo{text-align: center;}
+.c_infohead{width: 30%;}
+.c_comeback{width: 100px;height: 50px; background-color: #F1E3C4; border: 1px solid #eeeeee;}
