@@ -81,3 +81,6 @@ HTML, CSS, JS, 부트스트랩(원하는 사람만)
 
 ## 7. 프로젝트 초기 폴더/파일 구조도
 ![image](https://user-images.githubusercontent.com/121651359/216258097-ce95a519-bbcb-4002-98be-cb85025b14e9.png)
+
+## ppt 주소
+https://www.canva.com/design/DAFZyHGS-Yo/qtnLHJ3zIBDvvqQSELc8bg/edit
