@@ -84,3 +84,6 @@ HTML, CSS, JS, 부트스트랩(원하는 사람만)
 
 ## ppt 주소
 https://www.canva.com/design/DAFZyHGS-Yo/qtnLHJ3zIBDvvqQSELc8bg/edit
+
+## 유튜브 주소
+https://youtu.be/_BT7uYfH3dc
