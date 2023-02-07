@@ -26,3 +26,8 @@ function checkingbtn(){
 		}
 	}
 }
+
+document.addEventListener('keydown' , ()=>{
+	let inputbox = document.querySelectorAll('.c_inputbox').entries
+	console.log(inputbox)
+})

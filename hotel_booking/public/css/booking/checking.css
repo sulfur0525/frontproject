@@ -1,19 +1,51 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+   font-family: 'Happiness-Sans-Regular';
+    src:url("/hotel_booking/font/Happiness-Sans-Regular.woff");
+}
 
 .c_checkingNo{
 	width: 300px;
 }
 
-.checkingbox{
-	display: none;
-}
 .c_wrap div{margin: 3% 1%;}
-.c_wrap{margin: 5%;}
+.c_wrap{margin: 5%; text-align: center;}
 
 .c_checkinfo{
 	display: flex;
+	border-bottom: 1px dotted #F1E3C4;
+	font-family: 'Happiness-Sans-Regular';
+}
+.c_checkinfo input{
+	width: 300px;
+	height: 30px;
 }
 .checkbox{ 
 	width: 15%;
 }
 .c_priceinfo{width: 33%; }
+.c_creditinfo{text-align: center;}
+.c_creditno1, .c_creditno2, .c_creditno3{
+	width: 33%;	
+}
+.c_creditinfobox{border: none !important;}
+.c_creditcardno{display: flex;}
+.c_creditcardno{border: 1px solid black; height: 35px; padding: 1px;}
+.c_lockimg{width: 28px; height: 28px;}
+.c_creditcheck{display: flex;}
+.c_creditinfo{padding-bottom: 40px; border-bottom: 1px solid #eeeeee;}
+.c_checkingbtn{border: none; background-color: #F1E3C4; width: 100px; height: 30px;}
+.c_creditinfobox2{width: 200px; height: 30px;}
+.c_creditselect{width: 200px; height: 30px;}
