@@ -26,3 +26,21 @@ function checkingbtn(){
 		}
 	}
 }
+
+document.addEventListener('keyup' , ()=>{
+	let a = []
+	let inputbox = document.querySelectorAll('.c_inputbox')
+	for(let i =0;i<inputbox.length;i++){
+		if(inputbox[i].value!=''){
+			a.push(inputbox[i].value)
+		}
+	}
+	if(a.length==7){
+		document.querySelector('.c_importantbox').innerHTML = '필수항목을 모두 입력하였습니다.'
+		document.querySelector('.c_checkingbtn').disabled = ''
+		
+	}else{
+		document.querySelector('.c_importantbox').innerHTML = '필수항목중 빈 값이 있습니다.'
+		document.querySelector('.c_checkingbtn').disabled = 'disabled'
+	}
+})

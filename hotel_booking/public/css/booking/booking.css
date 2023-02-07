@@ -45,6 +45,7 @@
 .c_booking_info{
 	text-align: center;
 	border: 1px solid black;
+	font-family: Happiness-Sans-Bold;
 }
 .c_booking_info, .c_date{
 	display: flex;
@@ -131,6 +132,8 @@
 	height: 70px;
 	background-color: #F1E3C4;
 	border: 1px solid #eeeeee;
+	font-family: 'Happiness-Sans-Title';
+	
 }
 .c_modal_box button{
 	border-radius: 10%;
