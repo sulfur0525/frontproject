@@ -25,7 +25,7 @@ function bookinglist(){
 				요금=j.가격
 			}
 		})
-		
+		console.log(요금)
 		html += `<tr>
 					<td onclick="bo_modal(${i})" width="10%">${o.예약번호}</td>
 					<td width="10%">${o.고객명}</td>
@@ -49,14 +49,14 @@ function bo_modal(i){
 	
 	let 요금 = 0;
 	
-	booking.forEach((o,i)=>{
+	
 		roomtype.forEach((j)=>{
-			if(o.객실타입==j.객실타입){
+			if(booking[i].객실타입==j.객실타입){
 				요금=j.가격
 			}
 		})
-	})
 	
+	console.log(요금)
 	
 	
 	let html = `<thead>
