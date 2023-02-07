@@ -39,6 +39,7 @@ document.addEventListener('keyup' , ()=>{
 	if(a.length==7){
 		document.querySelector('.c_importantbox').innerHTML = '필수항목을 모두 입력하였습니다.'
 		document.querySelector('.c_checkingbtn').disabled = ''
+		document.querySelector('.c_checkingbtn').innerHTML = '<a href="complete.html">예약 완료</a>'
 		
 	}else{
 		document.querySelector('.c_importantbox').innerHTML = '필수항목중 빈 값이 있습니다.'
