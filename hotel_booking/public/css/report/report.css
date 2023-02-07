@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
-.F_main_content{ margin-bottom: 100px !important;}
+.F_main_content{ margin-bottom: 100px !important; width: 870px !important;}
 .F_main_content img{ margin-top: 25px; }
 .F_hotel_guide img{ align-items: center;}
 .F_mainwrite{ border-bottom: 5px solid black;}
-.F_sidebar_menu li{ margin: 5px 0px; }
-.D_sidebar{ width: 240px; height: 280px !important;}
+.F_sidebar_menu li{ margin: 5px 0px; color: #7F6039 !important; }
+.F_sidebar{ width: 220px !important; height: 290px !important;}
+.F_sidebar_li1{ background-color: #D3C09A; padding: 1px; color: #7F6039 !important; }
