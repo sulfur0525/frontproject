@@ -10,7 +10,7 @@
 
 ## 3. 역할분담
 
-메인화면 : 김미영(kimy041) -> index.html, index.css, index.js
+메인화면 : 김미영(kimy041) -> index.html, index.css, index.js, report.html, report.css
 
 회원가입/로그인: 오유진(ugincoo) -> member폴더에 있는 모든 것
 
@@ -31,6 +31,8 @@
 2023.02.04 : 본문_메인 콘텐츠(호텔 사진), 서브 콘텐츠(멤버십 혜택) 구현
 
 2023.02.05 : 본문_뉴스 구독 버튼 구현
+
+2023.02.06 : 호텔소개 페이지 구현
 
 
 오유진 : 
