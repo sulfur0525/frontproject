@@ -23,7 +23,7 @@ li{ list-style-type: none; }
 a{ color: #555; text-decoration: none; }
 /*----------------------------------------------*/
 
-.a_header{ background-color: #EEDCB7; font-family: 'Happiness-Sans-Bold';}
+.a_header{ cursor:pointer; background-color: #EEDCB7; font-family: 'Happiness-Sans-Bold';}
 .a_h_wrap{ width: 1200px; height: 90px; display: flex; position: relative; }
 
 .header{ background-color: #EEDCB7;}
@@ -73,8 +73,8 @@ a{ color: #555; text-decoration: none; }
 .a_banner{ position: absolute; top: 0px; left: 0px; }
 .a_banner_img{ display: flex; }
 .a_banner_btn{ width: 1200px; z-index: 1; font-size: 60px; position: relative; padding-bottom: 125px; color: rgba( 220 , 220 , 220 , 0.8); }
-.a_prev{ position: absolute; left: 0; margin-left: 100px; }
-.a_next{ position: absolute; right: 0; margin-right: 100px; }
+.a_prev{ cursor:pointer; position: absolute; left: 0; margin-left: 100px; }
+.a_next{ cursor:pointer; position: absolute; right: 0; margin-right: 100px; }
 /*----------------------------------*/
 /* 메인 콘텐츠 */
 .a_main_content{ text-align: center; width: 1200px; position: relative; padding: 80px 0px; }
